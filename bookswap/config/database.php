@@ -1,105 +1,112 @@
 <?php
 
-	return [
+if (!defined('RDS_HOSTNAME')) {
+  define('RDS_HOSTNAME', $_SERVER['RDS_HOSTNAME']);
+  define('RDS_USERNAME', $_SERVER['RDS_USERNAME']);
+  define('RDS_PASSWORD', $_SERVER['RDS_PASSWORD']);
+  define('RDS_DB_NAME', $_SERVER['RDS_DB_NAME']);
+}
 
-	    /*
-	    |--------------------------------------------------------------------------
-	    | Default Database Connection Name
-	    |--------------------------------------------------------------------------
-	    |
-	    | Here you may specify which of the database connections below you wish
-	    | to use as your default connection for all database work. Of course
-	    | you may use many connections at once using the Database library.
-	    |
-	    */
+return [
 
-	    'default' => env('DB_CONNECTION', 'mysql'),
+    /*
+    |--------------------------------------------------------------------------
+    | Default Database Connection Name
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify which of the database connections below you wish
+    | to use as your default connection for all database work. Of course
+    | you may use many connections at once using the Database library.
+    |
+    */
 
-	    /*
-	    |--------------------------------------------------------------------------
-	    | Database Connections
-	    |--------------------------------------------------------------------------
-	    |
-	    | Here are each of the database connections setup for your application.
-	    | Of course, examples of configuring each database platform that is
-	    | supported by Laravel is shown below to make development simple.
-	    |
-	    |
-	    | All database work in Laravel is done through the PHP PDO facilities
-	    | so make sure you have the driver for your particular database of
-	    | choice installed on your machine before you begin development.
-	    |
-	    */
+    'default' => env('DB_CONNECTION', 'mysql'),
 
-	    'connections' => [
+    /*
+    |--------------------------------------------------------------------------
+    | Database Connections
+    |--------------------------------------------------------------------------
+    |
+    | Here are each of the database connections setup for your application.
+    | Of course, examples of configuring each database platform that is
+    | supported by Laravel is shown below to make development simple.
+    |
+    |
+    | All database work in Laravel is done through the PHP PDO facilities
+    | so make sure you have the driver for your particular database of
+    | choice installed on your machine before you begin development.
+    |
+    */
 
-	        'sqlite' => [
-	            'driver' => 'sqlite',
-	            'database' => env('DB_DATABASE', database_path('database.sqlite')),
-	            'prefix' => '',
-	        ],
+    'connections' => [
 
-	        'mysql' => [
-	            'driver'    => 'mysql',
-	            'host'      => 'localhost',
-	            'database'  => 'swap',
-	            'username'  => 'root',
-	            'password'  => 'admin',
-	            'charset'   => 'utf8',
-	            'collation' => 'utf8_unicode_ci',
-	            'prefix'    => '',
-	            'strict' => true,
-	            'engine' => null,
-	        ],
+        'sqlite' => [
+            'driver' => 'sqlite',
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
+            'prefix' => '',
+        ],
 
-	        'pgsql' => [
-	            'driver'   => 'pgsql',
-	            'host'     => 'localhost',
-	            'database' => 'swap',
-	            'username' => 'root',
-	            'password' => 'admin',
-	            'charset'  => 'utf8',
-	            'prefix'   => '',
-	            'schema'   => 'public',
-	            'sslmode' => 'prefer',
-	        ],
+        'mysql' => [
+            'driver'    => 'mysql',
+            'host'      => RDS_HOSTNAME,
+            'database'  => RDS_DB_NAME,
+            'username'  => RDS_USERNAME,
+            'password'  => RDS_PASSWORD,
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict' => true,
+            'engine' => null,
+        ],
 
-	    ],
+        'pgsql' => [
+            'driver'   => 'pgsql',
+            'host'     => 'localhost',
+            'database' => 'trial',
+            'username' => 'root',
+            'password' => '',
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
+            'sslmode' => 'prefer',
+        ],
 
-	    /*
-	    |--------------------------------------------------------------------------
-	    | Migration Repository Table
-	    |--------------------------------------------------------------------------
-	    |
-	    | This table keeps track of all the migrations that have already run for
-	    | your application. Using this information, we can determine which of
-	    | the migrations on disk haven't actually been run in the database.
-	    |
-	    */
+    ],
 
-	    'migrations' => 'migrations',
+    /*
+    |--------------------------------------------------------------------------
+    | Migration Repository Table
+    |--------------------------------------------------------------------------
+    |
+    | This table keeps track of all the migrations that have already run for
+    | your application. Using this information, we can determine which of
+    | the migrations on disk haven't actually been run in the database.
+    |
+    */
 
-	    /*
-	    |--------------------------------------------------------------------------
-	    | Redis Databases
-	    |--------------------------------------------------------------------------
-	    |
-	    | Redis is an open source, fast, and advanced key-value store that also
-	    | provides a richer set of commands than a typical key-value systems
-	    | such as APC or Memcached. Laravel makes it easy to dig right in.
-	    |
-	    */
+    'migrations' => 'migrations',
 
-	    'redis' => [
+    /*
+    |--------------------------------------------------------------------------
+    | Redis Databases
+    |--------------------------------------------------------------------------
+    |
+    | Redis is an open source, fast, and advanced key-value store that also
+    | provides a richer set of commands than a typical key-value systems
+    | such as APC or Memcached. Laravel makes it easy to dig right in.
+    |
+    */
 
-	        'client' => 'predis',
+    'redis' => [
 
-	        'default' => [
-	            'host' => '127.0.0.1',
-	            'port' => 3306,
-	            'database' => 0,
-	        ],
+        'client' => 'predis',
 
-	    ],
+        'default' => [
+            'host' => '127.0.0.1',
+            'port' => 3306,
+            'database' => 0,
+        ],
 
-	];
+    ],
+
+];

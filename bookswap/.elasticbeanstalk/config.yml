@@ -1,0 +1,16 @@
+branch-defaults:
+  default:
+    environment: Sample-env
+  master:
+    environment: Sample-env
+environment-defaults:
+  Sample-env:
+    branch: null
+    repository: null
+global:
+  application_name: ggcbookswap
+  default_ec2_keyname: null
+  default_platform: PHP 5.4
+  default_region: us-west-2
+  profile: eb-cli
+  sc: git

@@ -69,8 +69,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
+                        <a href="{{ url('/test') }}">Exchange</a>
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <a href="{{ url('/test') }}">Exchange</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif
@@ -81,7 +83,7 @@
                 <div class="title m-b-md">
                     GGC Book Swap
                 </div>
-                <a href="{{ url('/test') }}">Test</a>
+                
 
             </div>
         </div>

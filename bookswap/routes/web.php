@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,6 +22,16 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/test', function()
 {
-	return View::make('test');
+	$exchange = App\Exchange::orderBy('created_at', 'asc')->get();
+	return View::make('test', array('exchange' => $exchange));
+	
+
+});
+
+Route::get('/viewBooks', function()
+{
+	$books = App\Books::orderBy('created_at', 'asc')->get();
+	return View::make('viewBooks', array('books' => $books));
+	
 });
 

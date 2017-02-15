@@ -4,13 +4,13 @@
 @section('content')
     <div class="container">
         <div class="col-sm-offset-2 col-sm-8">
-      
+
 
             <!-- Current Tasks -->
             @if (count($exchange) > 0)
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Exchange 
+                        Exchange
                     </div>
 
                     <div class="panel-body">
@@ -25,7 +25,7 @@
                                         <td class="table-text"><div>{{ $exchange->books_id}}</div></td>
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                         <td class="table-text"><div>${{ $exchange->price}}</div></td>
-                                        
+
                                         <!-- Task Delete Button -->
                                         <td>
 

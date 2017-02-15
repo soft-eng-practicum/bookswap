@@ -24,7 +24,7 @@ Route::get('/test', function()
 {
 	$exchange = App\Exchange::orderBy('created_at', 'asc')->get();
 	return View::make('test', array('exchange' => $exchange));
-	
+
 
 });
 
@@ -32,6 +32,11 @@ Route::get('/viewBooks', function()
 {
 	$books = App\Books::orderBy('created_at', 'asc')->get();
 	return View::make('viewBooks', array('books' => $books));
-	
+
 });
 
+Route::get('/selling', function()
+{
+	return View::make('selling');
+
+});

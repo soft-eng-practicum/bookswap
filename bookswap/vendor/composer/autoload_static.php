@@ -272,11 +272,20 @@ class ComposerStaticInitb0c2699e8af7dbed83db08ab1a6eafb6
     );
 
     public static $classMap = array (
+<<<<<<< HEAD
+=======
+        'BookTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BookTableSeeder.php',
+        'CreateBookTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_13_223430_create_book_table.php',
+>>>>>>> 3a9e0bcc6335dd604a05f5781870b0897abad3e1
         'CreateBooksTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_14_173617_create_books_table.php',
         'CreateExchangeTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_14_173648_create_exchange_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+<<<<<<< HEAD
+=======
+        'ExchangeTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ExchangeTableSeeder.php',
+>>>>>>> 3a9e0bcc6335dd604a05f5781870b0897abad3e1
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
@@ -806,6 +815,10 @@ class ComposerStaticInitb0c2699e8af7dbed83db08ab1a6eafb6
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+<<<<<<< HEAD
+=======
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
+>>>>>>> 3a9e0bcc6335dd604a05f5781870b0897abad3e1
     );
 
     public static function getInitializer(ClassLoader $loader)

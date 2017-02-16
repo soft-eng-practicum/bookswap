@@ -38,22 +38,26 @@ class SellingController extends Controller
     public function store(Request $request)
     {
 
+        //creates validation
+
+        $this->validate(request(),[
+
+          'title' => 'required',
+
+          'author' => 'required',
+
+          'edition' => 'required',
+
+          'ISBN' => 'required',
+
+          'publisher' => 'required'
+
+        ]);
+
         //create a new book using request data
         //save it to the database
 
-        Books::create([
-
-        'title' => request('title'),
-
-        'author' => request('author'),
-
-        'edition' => request('edition'),
-
-        'isbn' => request('ISBN'),
-
-        'publisher' => request('publisher')
-      ]);
-
+        Books::create(request(['title','author','edition','ISBN','publisher']));
 
         //redirect to books
 

@@ -38,10 +38,16 @@
                       <input type="text" class="form-control" id="publisher" name="publisher">
                     </div>
 
-
+                    <div class=form-group>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+
+                  @include('layouts.errors')
+                  
                   </form>
+
 
         </div>
     </div>
+  </div>
 @endsection

@@ -39,22 +39,21 @@ class SellingController extends Controller
     {
 
         //create a new book using request data
-
-         $books = new Books;
-
-         $books->title = request('title');
-
-         $books->author = request('author');
-
-         $books->edition = request('edition');
-
-         $books->isbn = request('ISBN');
-
-         $books->publisher = request('publisher');
-
         //save it to the database
 
-        $books->save();
+        Books::create([
+
+        'title' => request('title'),
+
+        'author' => request('author'),
+
+        'edition' => request('edition'),
+
+        'isbn' => request('ISBN'),
+
+        'publisher' => request('publisher')
+      ]);
+
 
         //redirect to books
 

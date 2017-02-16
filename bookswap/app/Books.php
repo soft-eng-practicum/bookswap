@@ -9,7 +9,7 @@ class Books extends Model
     //
     protected $table = 'books';
 
-    protected $fillable = [
-        'title', 'author', 'edition','ISBN','publisher'
+    protected $guarded = [
+        'user_id'
     ];
 }

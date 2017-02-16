@@ -40,3 +40,5 @@ Route::get('/selling', function()
 	return View::make('selling');
 
 });
+
+Route::post('/viewBooks', 'SellingController@store');

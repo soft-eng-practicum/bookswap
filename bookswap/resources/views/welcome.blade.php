@@ -12,6 +12,22 @@
 
         <!-- Styles -->
         <style>
+            input[type=text] {
+              width: 800px;
+              box-sizing: border-box;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              font-size: 16px;
+              background-color: white;
+              background-image: url('searchicon.png');
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              padding: 12px 20px 12px 40px;
+              -webkit-transition: width 0.4s ease-in-out;
+              transition: width 0.4s ease-in-out;
+              }
+
+
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -63,6 +79,29 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script>
+          function showResult(str) {
+            if (str.length==0) {
+              document.getElementById("livesearch").innerHTML="";
+              document.getElementById("livesearch").style.border="0px";
+              return;
+            }
+            if (window.XMLHttpRequest) {
+              // code for IE7+, Firefox, Chrome, Opera, Safari
+              xmlhttp=new XMLHttpRequest();
+            } else {  // code for IE6, IE5
+              xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+              if (this.readyState==4 && this.status==200) {
+                document.getElementById("livesearch").innerHTML=this.responseText;
+                document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+              }
+            }
+            xmlhttp.open("GET","livesearch.php?q="+str,true);
+            xmlhttp.send();
+          }
+          </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -88,6 +127,7 @@
                     GGC Book Swap
                 </div>
 
+                  <input type="text" name="search" placeholder="Search..">
 
             </div>
         </div>

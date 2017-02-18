@@ -16,7 +16,7 @@ class SellingController extends Controller
      */
     public function index()
     {
-        //
+      
     }
 
     /**

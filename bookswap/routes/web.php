@@ -50,3 +50,9 @@ Route::get('/addExchange', function () {
 });
 
 Route::post('/addExchange', 'AddExchangeController@store');
+
+Route::get('/about', function()
+{
+	return View::make('about');
+
+});

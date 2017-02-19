@@ -25,7 +25,10 @@
                             <tbody>
                                 @foreach ($exchange as $exchange)
                                     <tr>
+<<<<<<< HEAD
+=======
                                         <td class="table-text"><div>{{ $exchange->title}}</div></td>
+>>>>>>> a1896926be17725d8597b51a8fb94a2ceeb35bdb
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                         <td class="table-text"><div>${{ $exchange->price}}</div></td>
                                         <td class="table-text"><div>${{ $exchange->email}}</div></td>

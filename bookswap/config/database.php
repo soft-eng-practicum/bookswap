@@ -47,7 +47,7 @@ return [
             'password'  => 'abidjan4',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'unix_socket' => '/tmp/mysql.sock',
+            //'unix_socket' => '/tmp/mysql.sock',
             'prefix'    => '',
             'strict' => true,
             'engine' => null,

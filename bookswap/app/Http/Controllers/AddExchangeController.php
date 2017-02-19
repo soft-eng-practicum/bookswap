@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
+use App\Exchange;
 use App\Books;
 
-class SellingController extends Controller
+class AddExchangeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,26 +44,29 @@ class SellingController extends Controller
 
         $this->validate(request(),[
 
-          'title' => 'required',
+          'description' => 'required',
 
-          'author' => 'required',
+          'price' => 'required',
 
-          'edition' => 'required',
 
-          'ISBN' => 'required',
-
-          'publisher' => 'required'
 
         ]);
 
         //create a new book using request data
         //save it to the database
-
-        Books::create(request(['title','author','edition','ISBN','publisher']));
+        $id = Auth::id();
+        $ex = new Exchange;
+        $ex->description = $request->input('description');
+        $ex->price = $request->input('price');
+        $ex->user_id = $id;
+        $new = Books::orderBy('id', 'desc')->first();
+        $ex->books_id = $new->id;
+        $ex->save();
+        //Exchange::create(request(['description','price','books_id']));
 
         //redirect to books
 
-        return redirect('/addExchange');
+        return redirect('/test');
     }
 
     /**

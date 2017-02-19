@@ -22,7 +22,9 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/test', function()
 {
-	$exchange = App\Exchange::orderBy('created_at', 'asc')->get();
+	$exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
+	->join('users', 'user_id', '=', 'users.id')->get();
+
 	return View::make('test', array('exchange' => $exchange));
 
 
@@ -42,3 +44,15 @@ Route::get('/selling', function()
 });
 
 Route::post('/viewBooks', 'SellingController@store');
+
+Route::get('/addExchange', function () {
+    return view('addExchange');
+});
+
+Route::post('/addExchange', 'AddExchangeController@store');
+
+Route::get('/about', function()
+{
+	return View::make('about');
+
+});

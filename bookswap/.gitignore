@@ -1,2 +1,2 @@
 vendor/
-*~ bookswap/config/database.php
+config/database.php

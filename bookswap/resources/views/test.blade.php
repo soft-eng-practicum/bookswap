@@ -10,20 +10,28 @@
             @if (count($exchange) > 0)
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Exchange
+                        Books for Sale
                     </div>
 
                     <div class="panel-body">
                         <table class="table table-striped task-table">
                             <thead>
-                                <th>Exchanges</th>
+                                <th>Books Title</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Contact</th>
                                 <th>&nbsp;</th>
                             </thead>
                             <tbody>
                                 @foreach ($exchange as $exchange)
                                     <tr>
+<<<<<<< HEAD
+=======
+                                        <td class="table-text"><div>{{ $exchange->title}}</div></td>
+>>>>>>> a1896926be17725d8597b51a8fb94a2ceeb35bdb
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                         <td class="table-text"><div>${{ $exchange->price}}</div></td>
+                                        <td class="table-text"><div>${{ $exchange->email}}</div></td>
 
                                         <!-- Task Delete Button -->
                                         <td>

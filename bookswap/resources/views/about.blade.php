@@ -47,7 +47,7 @@
                       <div class="w3-col l3 m6 w3-margin-bottom">
                         <img src="a.jpg" alt="Adam" height="100" width="150">
                         <h3>Adam</h3>
-                        <p class="w3-opacity">Database </p>
+                        <p class="w3-opacity">Back-End Developer</p>
                         <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>-->
 
                       </div>

@@ -29,7 +29,7 @@
                                         <td class="table-text"><div>{{ $exchange->title}}</div></td>
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                         <td class="table-text"><div>${{ $exchange->price}}</div></td>
-                                        <td class="table-text"><div>${{ $exchange->email}}</div></td>
+                                        <td class="table-text"><div>{{ $exchange->email}}</div></td>
 
                                         <!-- Task Delete Button -->
                                         <td>

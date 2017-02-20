@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        GGC Book Swap
+                        Book Swap
                     </a>
                 </div>
 

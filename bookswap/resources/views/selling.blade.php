@@ -39,7 +39,7 @@
                     </div>
 
                     <div class=form-group>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Continue</button>
                   </div>
 
                   @include('layouts.errors')

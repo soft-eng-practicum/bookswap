@@ -113,12 +113,14 @@
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/example') }}">Example</a>
 
                     @else
 
 
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
+                        <a href="{{ url('/home') }}">Example</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif

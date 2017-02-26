@@ -56,3 +56,9 @@ Route::get('/about', function()
 	return View::make('about');
 
 });
+
+Route::get('/example', function()
+{
+	return View::make('example');
+
+});

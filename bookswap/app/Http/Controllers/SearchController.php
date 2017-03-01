@@ -4,21 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 
-use App\Exchange;
 use App\Books;
 
-class AddExchangeController extends Controller
+class SearchController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function autocomplete() 
+    {
+        $term = Input::get('title');
+        $results = array();
+        $queries = DB::table('Books')
+        ->where('title', 'LIKE', '%'.$term.'%')
+        ->take(5)->get();
+        foreach($queries as $query)
+        {
+            $results[];
+        }
+        return Response::json($results);
+    }
     public function index()
     {
-      
+
     }
 
     /**
@@ -44,32 +55,26 @@ class AddExchangeController extends Controller
 
         $this->validate(request(),[
 
-          'desc' => 'required',
+          'title' => 'required',
 
-          'description' => 'required',
+          'author' => 'required',
 
-          'price' => 'required',
+          'edition' => 'required',
 
+          'ISBN' => 'required',
 
+          'publisher' => 'required'
 
         ]);
 
         //create a new book using request data
         //save it to the database
-        $id = Auth::id();
-        $ex = new Exchange;
-        $ex->desc = $request->input('desc');
-        $ex->description = $request->input('description');
-        $ex->price = $request->input('price');
-        $ex->user_id = $id;
-        $new = Books::orderBy('id', 'desc')->first();
-        $ex->books_id = $new->id;
-        $ex->save();
-        //Exchange::create(request(['description','price','books_id']));
+
+        Books::create(request(['title','author','edition','ISBN','publisher']));
 
         //redirect to books
 
-        return redirect('/test');
+        return redirect('/addExchange');
     }
 
     /**

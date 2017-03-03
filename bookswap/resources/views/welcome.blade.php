@@ -80,28 +80,49 @@
             }
         </style>
         <script>
-          function showResult(str) {
-            if (str.length==0) {
-              document.getElementById("livesearch").innerHTML="";
-              document.getElementById("livesearch").style.border="0px";
-              return;
-            }
-            if (window.XMLHttpRequest) {
-              // code for IE7+, Firefox, Chrome, Opera, Safari
-              xmlhttp=new XMLHttpRequest();
-            } else {  // code for IE6, IE5
-              xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange=function() {
-              if (this.readyState==4 && this.status==200) {
-                document.getElementById("livesearch").innerHTML=this.responseText;
-                document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-              }
-            }
-            xmlhttp.open("GET","livesearch.php?q="+str,true);
-            xmlhttp.send();
+
+        var books;
+
+        function submitQuery(request, callback)
+        {
+          console.log("submitQuery called");
+              $.ajax({
+          method: "GET",
+          url: "/listexchangeJSON",   //getting JSON
+          data: { q: "intitle:" + request.term }                //get title of book from written keyword
+        })
+          .done(function handleResponse(response) {
+
+            console.log("handleResponse called");
+            //create new array books
+            books = response;
+
+            var titles = new Array;
+
+          for (var i = 0; i < response.items.length; i++) {
+            titles.push(response.items[i].volumeInfo.title);  //push title info into books
+
+            // in production code, item.text should have the HTML entities escaped.
+          //  document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
           }
-          </script>
+           callback(titles);
+
+          });
+          //after 2 characters written potential titles of books are displayed in textbox
+
+            }
+
+      $(function() {
+         $( "#title" ).autocomplete({
+             source: submitQuery,
+             minLength: 2,
+             select: function( event, ui ) {
+               // books.items[ui.item.id].volumeInfo.title
+               console.log( "Selected: " + ui.item.value);
+             }
+           });
+         });
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -114,6 +135,7 @@
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/example') }}">Example</a>
+                        <a href="{{ url('/listexchangeJSON') }}">JSON</a>
 
                     @else
 
@@ -121,6 +143,7 @@
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Example</a>
+                        <a href="{{ url('/listexchangeJSON') }}">JSON</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif

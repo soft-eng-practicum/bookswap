@@ -62,3 +62,16 @@ Route::get('/example', function()
 	return View::make('example');
 
 });
+
+Route::get('/listexchangeJSON', function()
+{
+  $exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
+	->join('users', 'user_id', '=', 'users.id')->get();
+
+  $books = App\Exchange::table('books')
+                ->where('title', 'LIKE', '%' . query . '%')
+                ->get();
+
+	return View::make('listexchangeJSON', array('exchange' => $exchange));
+
+});

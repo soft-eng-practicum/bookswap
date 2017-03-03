@@ -15,6 +15,7 @@ class CreateExchangeTable extends Migration
     {
         Schema::create('exchange', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('desc');
             $table->string('description');
             $table->integer('price');
             $table->integer('user_id')->unsigned();

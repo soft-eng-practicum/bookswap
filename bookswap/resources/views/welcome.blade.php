@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="/css/app.css" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -105,6 +106,7 @@
             // in production code, item.text should have the HTML entities escaped.
           //  document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
           }
+<<<<<<< HEAD
            callback(titles);
 
           });
@@ -123,6 +125,10 @@
            });
          });
         </script>
+=======
+          </script>
+          <script src="/js/app.js"></script>
+>>>>>>> 9cd275719754958a5cffd189f2a7c3bed1440a33
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -130,18 +136,39 @@
                 <div class="top-right links">
                     @if (Auth::check())
                         <a href="{{ url('/selling') }}">Sell</a>
-
                         <a href="{{ url('/test') }}">Explore</a>
+<<<<<<< HEAD
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/example') }}">Example</a>
                         <a href="{{ url('/listexchangeJSON') }}">JSON</a>
+=======
+                        <a href="{{ url('/about') }}">About Us</a>
+                        <a href="{{ url('/example') }}">Example</a>   
+                        
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                                                                
+>>>>>>> 9cd275719754958a5cffd189f2a7c3bed1440a33
 
                     @else
-
-
                         <a href="{{ url('/test') }}">Explore</a>
-                        <a href="{{ url('/about') }}">About us</a>
+                        <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/home') }}">Example</a>
                         <a href="{{ url('/listexchangeJSON') }}">JSON</a>
                         <a href="{{ url('/login') }}">Login</a>

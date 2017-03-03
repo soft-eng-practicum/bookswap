@@ -9,6 +9,6 @@ class Exchange extends Model
     //
     protected $table = 'exchange';
     protected $fillable = [
-        'description', 'price', 'user_id','books_id'
+        'desc', 'description', 'price', 'user_id','books_id'
     ];
 }

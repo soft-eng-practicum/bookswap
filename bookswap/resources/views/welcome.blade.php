@@ -8,7 +8,6 @@
         <title>Book Swap</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script
       src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
@@ -16,6 +15,7 @@
       crossorigin="anonymous"></script>
        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="/css/app.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -186,4 +186,4 @@
             </div>
         </div>
     </body>
-</html> 
+</html>

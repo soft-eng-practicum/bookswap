@@ -1,27 +1,12 @@
-
-
 [
-            <!-- Current Tasks -->
-            @if (count($exchange) > 0)
 
-
-
-
-                                @foreach ($exchange as $exchange)
-
+            @if (count($books) > 0)
+                                @foreach ($books as $books)
 {
-   "Title": "{{ $exchange->title}}",
-    "Description": "{{ $exchange->description }}",
-    "Price": "${{ $exchange->price}}",
-     "Email": "{{ $exchange->email}}"
-
+   "Title": "{{ $books->title}}"
 }
-
 ,
 
-
-
                                 @endforeach
-
             @endif
 ]

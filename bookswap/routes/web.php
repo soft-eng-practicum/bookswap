@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
@@ -63,15 +64,15 @@ Route::get('/example', function()
 
 });
 
-Route::get('/listexchangeJSON', function()
+Route::get('/listexchangeJSON', function(Request $request)
 {
-  $exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
-	->join('users', 'user_id', '=', 'users.id')->get();
+ //$books = App\Books::join('books', 'books_id', '=', 'books.id')
+	//->join('users', 'user_id', '=', 'users.id')->get();
 
-  $books = App\Exchange::table('books')
-                ->where('title', 'LIKE', '%' . query . '%')
-                ->get();
+ $books = App\Books::where('title', 'LIKE', '%' . $request->input('title') . '%')
+              ->get();
 
-	return View::make('listexchangeJSON', array('exchange' => $exchange));
+
+	return View::make('listexchangeJSON', array('books' => $books));
 
 });

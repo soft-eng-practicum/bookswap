@@ -9,6 +9,12 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script
+      src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="/css/app.css" rel="stylesheet">
 
         <!-- Styles -->
@@ -90,23 +96,23 @@
               $.ajax({
           method: "GET",
           url: "/listexchangeJSON",   //getting JSON
-          data: { q: "intitle:" + request.term }                //get title of book from written keyword
+          data: { q: "title:" + request.term },
+                //get title of book from written keyword
         })
           .done(function handleResponse(response) {
 
-            console.log("handleResponse called");
+            console.log("handleResponse called: " + response);
             //create new array books
             books = response;
 
             var titles = new Array;
 
-          for (var i = 0; i < response.items.length; i++) {
-            titles.push(response.items[i].volumeInfo.title);  //push title info into books
+          for (var i = 0; i < response.length; i++) {
+            titles.push(response[i].title);  //push title info into books
 
             // in production code, item.text should have the HTML entities escaped.
           //  document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
           }
-<<<<<<< HEAD
            callback(titles);
 
           });
@@ -115,7 +121,7 @@
             }
 
       $(function() {
-         $( "#title" ).autocomplete({
+         $( "#search" ).autocomplete({
              source: submitQuery,
              minLength: 2,
              select: function( event, ui ) {
@@ -125,10 +131,7 @@
            });
          });
         </script>
-=======
-          </script>
-          <script src="/js/app.js"></script>
->>>>>>> 9cd275719754958a5cffd189f2a7c3bed1440a33
+          <!--<script src="/js/app.js"></script>-->
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -137,15 +140,13 @@
                     @if (Auth::check())
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
-<<<<<<< HEAD
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/example') }}">Example</a>
                         <a href="{{ url('/listexchangeJSON') }}">JSON</a>
-=======
                         <a href="{{ url('/about') }}">About Us</a>
-                        <a href="{{ url('/example') }}">Example</a>   
-                        
+                        <a href="{{ url('/example') }}">Example</a>
+
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
@@ -163,8 +164,6 @@
                                         </form>
                                     </li>
                                 </ul>
-                                                                
->>>>>>> 9cd275719754958a5cffd189f2a7c3bed1440a33
 
                     @else
                         <a href="{{ url('/test') }}">Explore</a>
@@ -182,9 +181,9 @@
                     Book Swap
                 </div>
 
-                  <input type="text" name="search" placeholder="Search..">
+                  <input type="text" id="search" name="search" placeholder="Search..">
 
             </div>
         </div>
     </body>
-</html>
+</html> 

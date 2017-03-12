@@ -69,10 +69,11 @@ Route::get('/listexchangeJSON', function(Request $request)
  //$books = App\Books::join('books', 'books_id', '=', 'books.id')
 	//->join('users', 'user_id', '=', 'users.id')->get();
 
- $books = App\Books::where('title', 'LIKE', '%' . $request->input('title') . '%')
+ $books = App\Books::where('title', 'LIKE', '%'.$request->input('title').'%')
               ->get();
 
 
-	return View::make('listexchangeJSON', array('books' => $books));
+	//return View::make('listexchangeJSON', array('books' => $books));
+  return Response::json($books);
 
 });

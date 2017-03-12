@@ -96,8 +96,9 @@
               $.ajax({
           method: "GET",
           url: "/listexchangeJSON",   //getting JSON
-          data: { q: "title:" + request.term },
+          data: { q: "title:" + request.term }
                 //get title of book from written keyword
+
         })
           .done(function handleResponse(response) {
 
@@ -113,7 +114,10 @@
             // in production code, item.text should have the HTML entities escaped.
           //  document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
           }
-           callback(titles);
+
+      //  callback(titles);
+
+      console.log(titles);
 
           });
           //after 2 characters written potential titles of books are displayed in textbox

@@ -130,7 +130,8 @@
              minLength: 2,
              select: function( event, ui ) {
                // books.items[ui.item.id].volumeInfo.title
-               console.log( "Selected: " + ui.item.value);
+               console.log( "Selected: " +  ui.item.value);
+               window.location.href = '/test?title=' + ui.item.value;
              }
            });
          });
@@ -148,7 +149,6 @@
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/example') }}">Example</a>
                         <a href="{{ url('/about') }}">About Us</a>
-                        <a href="{{ url('/example') }}">Example</a>
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -172,7 +172,6 @@
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/home') }}">Example</a>
-                        <a href="{{ url('/listexchangeJSON') }}">JSON</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif

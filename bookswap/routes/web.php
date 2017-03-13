@@ -70,7 +70,8 @@ Route::get('/listexchangeJSON', function(Request $request)
 	//->join('users', 'user_id', '=', 'users.id')->get();
 
  $books = App\Books::where('title', 'LIKE', '%'.$request->input('title').'%')
-              ->get();
+          ->take(5)->get();
+
 
 
 	//return View::make('listexchangeJSON', array('books' => $books));

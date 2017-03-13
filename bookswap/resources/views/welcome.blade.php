@@ -14,12 +14,12 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous"></script>
        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link href="/css/app.css" rel="stylesheet">
+     <link href="/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
-            input[type=text] {
+            input[type=textz] {
               width: 800px;
               box-sizing: border-box;
               border: 2px solid #ccc;
@@ -115,7 +115,7 @@
           //  document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
           }
 
-      //  callback(titles);
+        callback(titles);
 
       console.log(titles);
 
@@ -147,7 +147,6 @@
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/example') }}">Example</a>
-                        <a href="{{ url('/listexchangeJSON') }}">JSON</a>
                         <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/example') }}">Example</a>
 
@@ -185,7 +184,7 @@
                     Book Swap
                 </div>
 
-                  <input type="text" id="search" name="search" placeholder="Search..">
+                  <input type="text" class="form-control" id="search" name="search" placeholder="Search..">
 
             </div>
         </div>

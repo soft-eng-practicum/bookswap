@@ -18,7 +18,8 @@ class AddExchangeController extends Controller
      */
     public function index()
     {
-      
+  
+
     }
 
     /**

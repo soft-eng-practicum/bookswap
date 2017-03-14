@@ -21,10 +21,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/test', function()
+Route::get('/test', function(Request $request)
 {
 	$exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
-	->join('users', 'user_id', '=', 'users.id')->get();
+	->join('users', 'user_id', '=', 'users.id')
+  ->where('title', 'LIKE', '%'.$request->input('title').'%')
+  ->get();
+
 
 	return View::make('test', array('exchange' => $exchange));
 

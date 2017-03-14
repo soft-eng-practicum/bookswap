@@ -16,16 +16,16 @@ class BookTableSeeder extends Seeder
 		DB::table('books')->insert([
 			'title' => 'Android Bootcamp for Developers',
 			'author' => 'Corinne Hoisington',
-			'edition' => '2nd',
 			'ISBN' => '978-1285856834',
-			'publisher' => 'Course Technology, Inc.'
+			'publisher' => 'Course Technology, Inc.',
+			'img_thumbnail' => 'uploads/blankBook.jpg'
 		]);
 		DB::table('books')->insert([
 			'title' => 'PHP and MySQL Web Development',
 			'author' => 'Luke Welling',
-			'edition' => '4th',
 			'ISBN' => '978-0672329166',
-			'publisher' => 'Developers Library'
+			'publisher' => 'Developers Library',
+			'img_thumbnail' => 'uploads/blankBook.jpg'
 		]);
     }
 }

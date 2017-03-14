@@ -16,6 +16,7 @@
                     <div class="panel-body">
                         <table class="table table-striped task-table">
                             <thead>
+                                <th>Books Cover</th>
                                 <th>Books Title</th>
                                 <th>Condition</th>
                                 <th>Description</th>
@@ -27,6 +28,7 @@
                                 @foreach ($exchange as $exchange)
                                     <tr>
 
+                                        <td class="table-text"><div><img id="myImg" src="{{ $exchange->img_thumbnail}}" width="107" height="98"></div></td>
                                         <td class="table-text"><div>{{ $exchange->title}}</div></td>
                                         <td class="table-text"><div>{{ $exchange->desc}}</div></td>
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>

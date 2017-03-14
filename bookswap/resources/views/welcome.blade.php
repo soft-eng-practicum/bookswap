@@ -143,12 +143,11 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
+                        <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
-                        <a href="{{ url('/home') }}">Home</a>
-                        <a href="{{ url('/example') }}">Example</a>
-                        <a href="{{ url('/about') }}">About Us</a>
+                        
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -171,7 +170,6 @@
                     @else
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About Us</a>
-                        <a href="{{ url('/home') }}">Example</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif

@@ -19,6 +19,8 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+
+    
 </head>
 <body>
     <div id="app">
@@ -50,13 +52,16 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            
+                            <li><a href="{{ url('/home') }}">Home</a></li>
                             <li><a href="{{ url('/test') }}">Explore</a></li>
+                            <li><a href="{{ url('/about') }}">About us</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li><a href="{{ url('/home') }}">Home</a></li>
                             <li><a href="{{ url('/selling') }}">Sell</a></li>
                             <li><a href="{{ url('/test') }}">Explore</a></li>
+                            <li><a href="{{ url('/about') }}">About us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -87,5 +92,9 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
 </body>
 </html>

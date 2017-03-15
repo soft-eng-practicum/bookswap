@@ -15,6 +15,7 @@
 
                     <div class="form-group">
                       <label for="description">Description</label> <br/>
+                      <input type="hidden" name="bookID" value={{$news}} >
                       <input type="radio" name="desc" value="bad"> Bad
                       <input type="radio" name="desc" value="fair"> Fair
                       <input type="radio" name="desc" value="good"> Good <br/> <br/>

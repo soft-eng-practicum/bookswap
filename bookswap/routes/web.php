@@ -50,7 +50,9 @@ Route::get('/selling', function()
 Route::post('/viewBooks', 'SellingController@store');
 
 Route::get('/addExchange', function () {
-    return view('addExchange');
+	$news = App\Books::orderBy('id', 'desc')->first();
+	$news = $news->id;
+    return View::make('addExchange', ['news' => $news]);
 });
 
 Route::post('/addExchange', 'AddExchangeController@store');

@@ -47,6 +47,13 @@ Route::get('/selling', function()
 
 });
 
+Route::get('/profile', function()
+{
+	return View::make('profile');
+
+});
+
+
 Route::post('/viewBooks', 'SellingController@store');
 
 Route::get('/addExchange', function () {

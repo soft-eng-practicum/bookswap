@@ -10,11 +10,16 @@
         <!-- Fonts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script
-      src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-      crossorigin="anonymous"></script>
-       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-     <link href="/css/app.css" rel="stylesheet">
+          src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+          crossorigin="anonymous"></script>
+        <script>
+          window.Laravel = {!! json_encode([
+              'csrfToken' => csrf_token(),
+          ]) !!};
+        </script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
@@ -143,29 +148,11 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
-                        
-
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
+                        <a href="{{ url('/profile') }}"> {{ Auth::user()->name }}  </a>
+                              
 
                     @else
                         <a href="{{ url('/test') }}">Explore</a>

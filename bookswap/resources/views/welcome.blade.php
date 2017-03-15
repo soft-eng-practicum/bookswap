@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Book Swap</title>
+        <title>Book Swap: Main Page</title>
 
         <!-- Fonts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -36,7 +36,7 @@
 
 
             html, body {
-                background-color: #fff;
+                background-color: #F0FFFF;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -147,7 +147,7 @@
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
-                        
+
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

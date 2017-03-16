@@ -102,7 +102,7 @@
                                         <td class="table-text"><div>{{ $exchange->desc}}</div></td>
                                         <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                         <td class="table-text"><div>${{ $exchange->price}}</div></td>
-                                        <td class="table-text"><div>{{ $exchange->email}}</div></td>
+                                        <td class="table-text"><div><a href="mailto:{{ $exchange->email }}" target="_blank">{{ $exchange->email }}</a></div></td>
 
                                         <!-- Task Delete Button -->
                                         <td>

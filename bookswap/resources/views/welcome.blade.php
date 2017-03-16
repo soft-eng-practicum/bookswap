@@ -151,7 +151,6 @@
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
-<<<<<<< HEAD
 
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -171,10 +170,9 @@
                                         </form>
                                     </li>
                                 </ul>
-=======
+
                         <a href="{{ url('/profile') }}"> {{ Auth::user()->name }}  </a>
                               
->>>>>>> 9f06866d3824a7ef12f810ddb6660125bb105a20
 
                     @else
                         <a href="{{ url('/test') }}">Explore</a>

@@ -11,4 +11,5 @@ class Exchange extends Model
     protected $fillable = [
         'desc', 'description', 'price', 'user_id','books_id'
     ];
+  
 }

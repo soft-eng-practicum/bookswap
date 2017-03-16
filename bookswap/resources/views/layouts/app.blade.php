@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
+    
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -20,7 +20,7 @@
         ]) !!};
     </script>
 
-    
+
 </head>
 <body>
     <div id="app">

@@ -1,9 +1,27 @@
 @extends('layouts.app')
 <html>
-<title>W3.CSS Template</title>
+<title>About Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+.w3-btn-block{
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+  background-color:#fff ;
+  font-weight: bold;
+  font-size: 15px;
+}
+.w3-btn-block:hover{
+  box-shadow: none;
+  text-decoration: none;
+
+}
+
+
+</style>
+
 <body>
 
 @section('content')

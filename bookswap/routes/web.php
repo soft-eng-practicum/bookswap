@@ -70,6 +70,12 @@ Route::get('/about', function()
 
 });
 
+Route::get('/faq', function()
+{
+	return View::make('faq');
+
+});
+
 Route::get('/example', function()
 {
 	return View::make('example');

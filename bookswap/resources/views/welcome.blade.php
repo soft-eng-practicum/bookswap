@@ -41,7 +41,7 @@
 
 
             html, body {
-                background-color: #F0FFFF;
+                background-color: #FFFFFF;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -151,6 +151,8 @@
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
+                        <a href="{{ url('/faq') }}">FAQ</a>
+
 
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -172,24 +174,23 @@
                                 </ul>
 
                         <a href="{{ url('/profile') }}"> {{ Auth::user()->name }}  </a>
-                              
+
 
                     @else
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/faq') }}">FAQ</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Book Swap
-                </div>
-
-                  <input type="text" class="form-control" id="search" name="search" placeholder="Search..">
-
+              <div class="title m-b-md">
+                  <img src="{{URL::asset('img/BookSwapLogo.jpg')}}" alt="" style="width:500px;height:375px;"/>
+                  <input type="text" class="form-control" id="search" name="search" placeholder="Search book..">
+              </div>
             </div>
         </div>
     </body>

@@ -8,7 +8,7 @@ class Exchange extends Model
 {
     //
     protected $table = 'exchange';
-    protected $fillable = [
-        'desc', 'description', 'price', 'user_id','books_id'
+    protected $guarded = [
+        'user_id'
     ];
 }

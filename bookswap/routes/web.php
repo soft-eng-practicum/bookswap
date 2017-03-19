@@ -25,7 +25,7 @@ Route::get('/test', function(Request $request)
 {
 	$exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
 	->join('users', 'user_id', '=', 'users.id')
-  ->where('title', 'LIKE', '%'.$request->input('title').'%')
+  //->where('title', 'LIKE', '%'.$request->input('title').'%')
   ->get();
 
 

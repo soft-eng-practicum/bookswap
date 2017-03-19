@@ -48,7 +48,9 @@ class SellingController extends Controller
 
           'ISBN' => 'required',
 
-          'publisher' => 'required'
+          'publisher' => 'required',
+
+          'img_thumbnail' => 'required'
 
 
 

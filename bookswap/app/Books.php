@@ -12,4 +12,6 @@ class Books extends Model
     protected $guarded = [
         'user_id'
     ];
+
+
 }

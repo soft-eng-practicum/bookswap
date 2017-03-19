@@ -63,8 +63,7 @@ class AddExchangeController extends Controller
         $ex->description = $request->input('description');
         $ex->price = $request->input('price');
         $ex->user_id = $id;
-        $new = Books::orderBy('id', 'desc')->first();
-        $ex->books_id = $new->id;
+        $ex->books_id = $request->input('bookID');
         $ex->save();
         //Exchange::create(request(['description','price','books_id']));
 

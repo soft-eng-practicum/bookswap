@@ -5,16 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Book Swap</title>
+        <title>Book Swap: Main Page</title>
 
         <!-- Fonts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script
-      src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-      crossorigin="anonymous"></script>
-       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-     <link href="/css/app.css" rel="stylesheet">
+          src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+          crossorigin="anonymous"></script>
+        <script>
+          window.Laravel = {!! json_encode([
+              'csrfToken' => csrf_token(),
+          ]) !!};
+        </script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
@@ -36,7 +41,7 @@
 
 
             html, body {
-                background-color: #fff;
+                background-color: #FFFFFF;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -143,11 +148,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About us</a>
-                        
+                        <a href="{{ url('/faq') }}">FAQ</a>
+
+
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -167,22 +173,24 @@
                                     </li>
                                 </ul>
 
+                        <a href="{{ url('/profile') }}"> {{ Auth::user()->name }}  </a>
+
+
                     @else
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/faq') }}">FAQ</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Book Swap
-                </div>
-
-                  <input type="text" class="form-control" id="search" name="search" placeholder="Search..">
-
+              <div class="title m-b-md">
+                  <img src="{{URL::asset('img/BookSwapLogo.jpg')}}" alt="" style="width:500px;height:375px;"/>
+                  <input type="text" class="form-control" id="search" name="search" placeholder="Search book..">
+              </div>
             </div>
         </div>
     </body>

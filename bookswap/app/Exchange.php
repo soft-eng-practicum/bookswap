@@ -11,4 +11,5 @@ class Exchange extends Model
     protected $guarded = [
         'user_id'
     ];
+  
 }

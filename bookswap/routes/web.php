@@ -47,10 +47,19 @@ Route::get('/selling', function()
 
 });
 
+Route::get('/profile', function()
+{
+	return View::make('profile');
+
+});
+
+
 Route::post('/viewBooks', 'SellingController@store');
 
 Route::get('/addExchange', function () {
-    return view('addExchange');
+	$news = App\Books::orderBy('id', 'desc')->first();
+	$news = $news->id;
+    return View::make('addExchange', ['news' => $news]);
 });
 
 Route::post('/addExchange', 'AddExchangeController@store');
@@ -58,6 +67,12 @@ Route::post('/addExchange', 'AddExchangeController@store');
 Route::get('/about', function()
 {
 	return View::make('about');
+
+});
+
+Route::get('/faq', function()
+{
+	return View::make('faq');
 
 });
 

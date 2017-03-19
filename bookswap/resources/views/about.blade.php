@@ -1,9 +1,27 @@
 @extends('layouts.app')
 <html>
-<title>W3.CSS Template</title>
+<title>About Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+.w3-btn-block{
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+  background-color:#fff ;
+  font-weight: bold;
+  font-size: 15px;
+}
+.w3-btn-block:hover{
+  box-shadow: none;
+  text-decoration: none;
+
+}
+
+
+</style>
+
 <body>
 
 @section('content')
@@ -12,7 +30,7 @@
 
               <div class="panel panel-default">
                   <div class="panel-heading">
-                      About
+                      About Book Swap
                   </div>
 
 
@@ -20,7 +38,7 @@
 
                     <!-- About Section -->
                     <div class="w3-container w3-padding-32" id="about">
-                      
+
                       <p>A web app targeted for GGC students to exchange their books to other students.
                   I believe this is a good idea because this may create a closer community for the GGC students and it will be easier to use than the way GGC students exchange books (on Facebook) as of right now.
 
@@ -59,7 +77,9 @@
 
                       </div>
 
-                        <p><button class="w3-btn-block">Contact</button></p>
+                        <p><button class="w3-btn-block"><a href="mailto:bookswapy@gmail.com" target="_top">Email Us</button></p>
+
+
                     </div>
 
 
@@ -71,8 +91,11 @@
                   <!-- Footer -->
                   <footer>
                     <div id = "footer">
-                      <center> Copyright &copy; 2017 Bookswap </center>
 
+                      <br>
+                    <center>  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0"
+                      src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</center>
+                      <center> Copyright &copy; 2017 Bookswap </center>
                         </a>
                     </div>
                   </footer>

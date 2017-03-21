@@ -101,7 +101,7 @@
               $.ajax({
           method: "GET",
           url: "/listexchangeJSON",   //getting JSON
-          data: { q: "title:" + request.term }
+          data: { title: request.term }
                 //get title of book from written keyword
 
         })
@@ -129,6 +129,7 @@
 
             }
 
+
       $(function() {
          $( "#search" ).autocomplete({
              source: submitQuery,
@@ -137,9 +138,21 @@
                // books.items[ui.item.id].volumeInfo.title
                console.log( "Selected: " +  ui.item.value);
                window.location.href = '/test?title=' + ui.item.value;
+             },
+           });
+           // enter keypress
+           $('#search').keypress(function (e) {
+             if (e.which == 13) {
+               //console.log("enter keypress" +  $('#search')[0].value );
+                window.location.href = '/test?title=' + $('#search')[0].value;
              }
+
+
            });
          });
+
+
+
         </script>
           <!--<script src="/js/app.js"></script>-->
     </head>

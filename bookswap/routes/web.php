@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
@@ -49,7 +50,12 @@ Route::get('/selling', function()
 
 Route::get('/profile', function()
 {
-	return View::make('profile');
+  $exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
+  ->join('users', 'user_id', '=', 'users.id')
+  ->where('user_id', '=', Auth::id())
+  ->get();
+
+	return View::make('profile', array('exchange' => $exchange));
 
 });
 

@@ -29,7 +29,12 @@
                                               <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                               <td class="table-text"><div>${{ $exchange->price}}</div></td>
                                               <td class="table-text"><div><a href="mailto:{{ $exchange->email }}" target="_blank">{{ $exchange->email }}</a></div></td>
-                                              <td><button type="submit" class="btn btn-primary">Delete</button></td>
+                                              <td>    <!--Delete button -->
+                                                      {{ Form::open(['method' => 'DELETE', 'route' => ['exchange.destroy', $exchange->id]]) }}
+                                                      {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
+                                                      {{ Form::close() }}
+
+                                                    </td>
                                               <!-- Task Delete Button -->
                                               <td>
 

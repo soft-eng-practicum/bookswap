@@ -110,5 +110,6 @@ class SellingController extends Controller
     public function destroy($id)
     {
         //
+      
     }
 }

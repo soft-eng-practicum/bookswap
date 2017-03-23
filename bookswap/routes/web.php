@@ -59,6 +59,9 @@ Route::get('/profile', function()
 
 });
 
+Route::resource('exchange', 'AddExchangeController');
+
+Route::delete('/profile/{id}',array('uses' => 'AddExchangeController@destroy', 'as' => '/profile'));
 
 Route::post('/viewBooks', 'SellingController@store');
 

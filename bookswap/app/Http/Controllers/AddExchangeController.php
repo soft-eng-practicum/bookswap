@@ -18,7 +18,7 @@ class AddExchangeController extends Controller
      */
     public function index()
     {
-  
+
 
     }
 
@@ -115,5 +115,10 @@ class AddExchangeController extends Controller
     public function destroy($id)
     {
         //
+        $exchange = Exchange::findorFail($id);
+        $exchange->delete();
+
+     // redirect
+     return redirect('/profile');
     }
 }

@@ -90,6 +90,29 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .form-control {
+         border: 0;
+            border-bottom: 3px solid #403737;
+            border-radius: 0;
+            outline: 0;
+            box-shadow: none;
+            }
+            .form-control::-webkit-input-placeholder,
+            .form-control::-moz-input-placeholder,
+            .form-control:-ms-input-placeholder {
+         color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+            }
+            textarea:focus,
+            input[type="text"]:focus,
+            .uneditable-input:focus {
+         border: 0;
+            border-bottom: 3px solid #403737;
+            border-radius: 0;
+            outline: 0;
+            box-shadow: none;
+            transition: all 300ms ease-in-out;
+            }
         </style>
         <script>
 

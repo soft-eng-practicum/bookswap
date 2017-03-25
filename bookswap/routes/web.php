@@ -27,6 +27,7 @@ Route::get('/test', function(Request $request)
 	$exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
 	->join('users', 'user_id', '=', 'users.id')
   ->where('title', 'LIKE', '%'.$request->input('title').'%')
+  ->whereRaw('adddate(exchange.created_at, interval 14 day) > now()')
   ->get();
 
 
@@ -62,6 +63,7 @@ Route::get('/profile', function()
 Route::resource('exchange', 'AddExchangeController');
 
 Route::delete('/profile/{id}',array('uses' => 'AddExchangeController@destroy', 'as' => '/profile'));
+
 
 Route::post('/viewBooks', 'SellingController@store');
 

@@ -14,19 +14,7 @@ class SearchController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function autocomplete() 
-    {
-        $term = Input::get('title');
-        $results = array();
-        $queries = DB::table('Books')
-        ->where('title', 'LIKE', '%'.$term.'%')
-        ->take(5)->get();
-        foreach($queries as $query)
-        {
-            $results[];
-        }
-        return Response::json($results);
-    }
+
     public function index()
     {
 

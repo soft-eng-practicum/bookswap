@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 use App\Exchange;
 use App\Books;
@@ -114,9 +115,12 @@ class AddExchangeController extends Controller
      */
     public function destroy($id)
     {
-        //
-        $exchange = Exchange::findorFail($id);
+          Log::info('this is being called' .$id);
+        //deletes exchange by id
+        $exchange = Exchange::findOrFail($id);
         $exchange->delete();
+
+
 
      // redirect
      return redirect('/profile');

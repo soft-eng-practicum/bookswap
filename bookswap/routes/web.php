@@ -14,11 +14,11 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
@@ -35,6 +35,14 @@ Route::get('/test', function(Request $request)
 
 
 });
+
+Route::get('/addExchange', function () {
+	$news = App\Books::orderBy('id', 'desc')->first();
+	$news = $news->id;
+    return View::make('addExchange', ['news' => $news]);
+});
+
+Route::post('/addExchange', 'AddExchangeController@store');
 
 Route::get('/viewBooks', function()
 {
@@ -54,32 +62,25 @@ Route::get('/profile', function()
   $exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')
   ->join('users', 'user_id', '=', 'users.id')
   ->where('user_id', '=', Auth::id())
+  ->select('exchange.id as exchange_id', 'exchange.*', 'users.*', 'books.*' )
   ->get();
 
 	return View::make('profile', array('exchange' => $exchange));
 
 });
 
-Route::resource('exchange', 'AddExchangeController');
-
 Route::delete('/profile/{id}',array('uses' => 'AddExchangeController@destroy', 'as' => '/profile'));
 
+Route::resource('exchange', 'AddExchangeController');
 
-Route::post('/viewBooks', 'SellingController@store');
-
-Route::get('/addExchange', function () {
-	$news = App\Books::orderBy('id', 'desc')->first();
-	$news = $news->id;
-    return View::make('addExchange', ['news' => $news]);
-});
-
-Route::post('/addExchange', 'AddExchangeController@store');
 
 Route::get('/about', function()
 {
 	return View::make('about');
 
 });
+
+Route::post('/viewBooks', 'SellingController@store');
 
 Route::get('/faq', function()
 {

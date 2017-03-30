@@ -31,7 +31,16 @@
 .w3-row-padding {
   text-align: center;
 }
+.panel-heading p {
+  font-size:  15px;
+  font-weight: bold;
+  color: #696969;
+  display: inline;
+}
+.panel-heading{
+  text-align: center;
 
+}
 
 
 </style>
@@ -44,7 +53,7 @@
 
               <div class="panel panel-default">
                   <div class="panel-heading">
-                      About Book Swap
+                    <p>  About Book Swap </p>
                   </div>
 
 
@@ -53,11 +62,8 @@
                     <!-- About Section -->
                     <div class="w3-container w3-padding-32" id="about">
 
-                      <p>A web app targeted for GGC students to exchange their books to other students.
-                  We believe this is a great idea because this may create a closer community for the GGC students and it will be easier to use than the way GGC students exchange books (on Facebook) as of right now.
-
-
-                      </p>
+                      <center> A web app targeted for GGC students to buy and sell books with other GGC students. We believe that this is a great idea since it facilitates the way people exchange books, and it'll create a closer community and bring students together, compared to something like Facebook.
+                      </center>
 
                     </div>
 

@@ -38,7 +38,10 @@
               -webkit-transition: width 0.4s ease-in-out;
               transition: width 0.4s ease-in-out;
               }
-
+              input[type=text] {
+                font-weight: bold;
+                text-transform: capitalize;
+              }
 
             html, body {
                 background-color: #FFFFFF;
@@ -113,6 +116,11 @@
             box-shadow: none;
             transition: all 300ms ease-in-out;
             }
+
+         ::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, 1.0);
+            font-weight: bold;
+          }
         </style>
         <script>
 
@@ -184,8 +192,9 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/selling') }}">Sell</a>
+
                         <a href="{{ url('/test') }}">Explore</a>
+                        <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/about') }}">About us</a>
                         <a href="{{ url('/faq') }}">FAQ</a>
 

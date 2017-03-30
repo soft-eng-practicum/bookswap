@@ -89,8 +89,20 @@ outline: 0;
 box-shadow: none;
 transition: all 300ms ease-in-out;
 }
+.label-class {
 
+  margin: 10px 0 0 0;
+}
+.panel-heading p {
+  font-size:  15px;
+  font-weight: bold;
+  color: #696969;
+  display: inline;
+}
+.panel-heading{
+  text-align: center;
 
+}
 </style>
 
 @section('content')
@@ -100,7 +112,7 @@ transition: all 300ms ease-in-out;
 
               <div class="panel panel-default">
                   <div class="panel-heading">
-                      Sell
+                    <p>  Sell </p>
                   </div>
 
                   <form method = "POST" action = "/addExchange">
@@ -108,7 +120,7 @@ transition: all 300ms ease-in-out;
 
                     <div class="form-group">
 
-                      <label for="description">Description</label> <br/>
+                      <label class="label-class" for="description">Description</label> <br/>
                       <div class="radio-wrapper">
                           <input type="hidden" name="bookID" value={{$news}} >
                           <input type="radio" name="desc" value="bad"> Bad

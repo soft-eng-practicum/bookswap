@@ -67,6 +67,16 @@
     .m-b-md {
         margin-bottom: 30px;
     }
+    .panel-heading p {
+      font-size:  15px;
+      font-weight: bold;
+      color: #696969;
+      display: inline;
+    }
+    .panel-heading{
+      text-align: center;
+
+    }
 </style>
 @section('content')
 
@@ -79,7 +89,7 @@
             @if (count($exchange) > 0)
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Books for Sale
+                        <p> Books for Sale <p>
                     </div>
 
                     <div class="panel-body">
@@ -114,10 +124,10 @@
                         </table>
                     </div>
                 </div>
-                @else 
+                @else
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        None
+                      <p>  There are no results for this book.</p>
                     </div>
                 </div>
             @endif

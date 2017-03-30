@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -59,9 +59,10 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li><a href="{{ url('/home') }}">Home</a></li>
-                            <li><a href="{{ url('/selling') }}">Sell</a></li>
                             <li><a href="{{ url('/test') }}">Explore</a></li>
+                            <li><a href="{{ url('/selling') }}">Sell</a></li>
                             <li><a href="{{ url('/about') }}">About us</a></li>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

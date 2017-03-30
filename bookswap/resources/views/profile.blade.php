@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-               <div class="panel-heading">Profile</div>
+               <div class="panel-heading" style="color:#696969;"><strong><center> Profile</strong></center></div>
                   @if (count($exchange) > 0)
                       <div class="panel panel-default">
                           <div class="panel-body">

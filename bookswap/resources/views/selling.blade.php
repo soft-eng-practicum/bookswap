@@ -79,8 +79,20 @@ outline: 0;
 box-shadow: none;
 transition: all 300ms ease-in-out;
 }
+.label-class {
 
+  margin: 10px 0 0 0;
+}
+.panel-heading p {
+  font-size:  15px;
+  font-weight: bold;
+  color: #696969;
+  display: inline;
+}
+.panel-heading{
+  text-align: center;
 
+}
 
 </style>
 
@@ -102,7 +114,7 @@ transition: all 300ms ease-in-out;
 
               <div class="panel panel-default">
                   <div class="panel-heading">
-                      Sell
+                    <p>  Sell </p>
                   </div>
 
       <script>
@@ -166,7 +178,7 @@ transition: all 300ms ease-in-out;
                     {{ csrf_field() }}
 
                     <div class="form-group">
-                      <label for="title">Title</label>
+                      <label class="label-class" for="title">Title</label>
 
                       <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
                     </div>

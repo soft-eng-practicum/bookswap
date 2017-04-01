@@ -121,6 +121,41 @@
             color: rgba(0, 0, 0, 1.0);
             font-weight: bold;
           }
+          .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: .2rem;
+            background-color: #efefef;
+            text-align: center;
+          }
+          ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                text-decoration: none;
+              }
+            .disabled {
+               pointer-events: none;
+               cursor: default;
+            }
+
         </style>
         <script>
 
@@ -196,7 +231,6 @@
                         <a href="{{ url('/test') }}">Explore</a>
                         <a href="{{ url('/selling') }}">Sell</a>
                         <a href="{{ url('/about') }}">About us</a>
-                        <a href="{{ url('/faq') }}">FAQ</a>
 
                         <a href="{{ url('/profile') }}"> {{ Auth::user()->name }}  </a>
 
@@ -206,7 +240,6 @@
                         <a href="{{ url('/about') }}">About Us</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
-                        <a href="{{ url('/faq') }}">FAQ</a>
                     @endif
                 </div>
             @endif
@@ -217,6 +250,14 @@
                   <input type="text" class="form-control" id="search" name="search" placeholder="Search book..">
               </div>
             </div>
+        </div>
+        <div class="footer">
+          <ul>
+            <li><a href="{{ url('/home') }}">Home</a></li>
+            <li><a href="{{ url('/about') }}">About</a></li>
+            <li><a href="{{ url('/faq') }}">FAQ</a></li>
+            <li style="float:right"><a class="disabled" href="#copyright">Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.</a></li>
+          </ul>
         </div>
     </body>
 </html>

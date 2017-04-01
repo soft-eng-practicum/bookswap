@@ -41,8 +41,39 @@
   text-align: center;
 
 }
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .2rem;
+  background-color: #efefef;
+  text-align: center;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
 
+  li {
+      float: left;
+  }
 
+  li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  li a:hover {
+      text-decoration: none;
+    }
+  .disabled {
+     pointer-events: none;
+     cursor: default;
+  }
 </style>
 
 <body>
@@ -104,6 +135,9 @@
                       </div>
 
                         <p><button class="w3-btn-block"><a href="mailto:bookswapy@gmail.com" target="_top">Email Us</button></p>
+                        
+                          <p><center>  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0"
+                            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</center></p>
 
 
                     </div>
@@ -115,20 +149,20 @@
 
 
                   <!-- Footer -->
-                  <footer>
-                    <div id = "footer">
 
-                      <br>
-                    <center>  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0"
-                      src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</center>
-                      <center> Copyright &copy; 2017 Bookswap </center>
-                        </a>
-                    </div>
-                  </footer>
+
 
 
         </div>
     </div>
+  </div>
+  <div class="footer">
+    <ul>
+      <li><a href="{{ url('/home') }}">Home</a></li>
+      <li><a href="{{ url('/about') }}">About</a></li>
+      <li><a href="{{ url('/faq') }}">FAQ</a></li>
+      <li style="float:right"><a class="disabled" href="#copyright">Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.</a></li>
+    </ul>
   </div>
 </body>
 </html>

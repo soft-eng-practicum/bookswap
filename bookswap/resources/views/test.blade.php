@@ -1,5 +1,6 @@
 
 @extends('layouts.app')
+<title>Book Swap: Explore Page</title>
 <style>
     input[type=textz] {
       width: 800px;

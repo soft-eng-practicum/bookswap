@@ -1,5 +1,6 @@
 
 @extends('layouts.app')
+<title>Book Swap: Sell Page</title>
 <style>
 input[type=text], select {
 width: 90%;

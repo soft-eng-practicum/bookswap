@@ -19,7 +19,7 @@
                                       <th>Description</th>
                                       <th>Price</th>
                                       <th>Contact</th>
-                                      <th>ID</th>
+                                    <!-- <th>ID</th> -->
                                       <th>&nbsp;</th>
                                   </thead>
                                   <tbody>
@@ -31,7 +31,7 @@
                                               <td class="table-text"><div>{{ $exchange->desc}}</div></td>
                                               <td class="table-text"><div>{{ $exchange->description }}</div></td>
                                               <td class="table-text"><div>${{ $exchange->price}}</div></td>
-                                              <td class="table-text"><div>${{ $exchange->id}}</div></td>
+                                            <!--    <td class="table-text"><div>${{ $exchange->id}}</div></td> -->
                                               <td class="table-text"><div><a href="mailto:{{ $exchange->email }}" target="_blank">{{ $exchange->email }}</a></div></td>
                                               <td>    <!--Delete button -->
                                                       {{ csrf_field() }}

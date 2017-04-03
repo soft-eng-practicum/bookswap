@@ -1,4 +1,9 @@
 @extends('layouts.app')
+<title>Book Swap: Reset Page</title>
+
+
+
+
 <style>
 
 input[type=submit] {

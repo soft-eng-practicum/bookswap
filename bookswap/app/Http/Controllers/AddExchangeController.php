@@ -115,7 +115,7 @@ class AddExchangeController extends Controller
      */
     public function destroy($id)
     {
-          Log::info('this is being called' .$id);
+      //    Log::info('this is being called' .$id);
         //deletes exchange by id
         $exchange = Exchange::findOrFail($id);
         $exchange->delete();

@@ -11,6 +11,7 @@ use App\Mail\VerifyEmail;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use App\Jobs\SendVerificationEmail;
+//use Illuminate\Contracts\Validation\Validator;
 
 class RegisterController extends Controller
 {
@@ -54,8 +55,11 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
+            'email' => ['required', 'email', 'max:255', 'unique:users', 'regex:/@ggc\.edu$/'],
             'password' => 'required|min:6|confirmed',
+        ],
+        [
+            'email.regex' => 'A GGC email is required'
         ]);
     }
 
@@ -102,5 +106,4 @@ class RegisterController extends Controller
     return view('emails.emailconfirm',['user'=>$user]);
     }
     }
-
 }

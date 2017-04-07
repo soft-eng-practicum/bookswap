@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title></title>
-</head>
-    <body>
-      <h1>Please verify your email</h1>
-    </body>
-    </html>
+<h1>Click the Link To Verify Your Email</h1>
+Click the following link to verify your email {{url('/verifyemail/'.$email_token)}}

@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
+
 Route::get('/test', function(Request $request)
 {
 	$exchange = App\Exchange::join('books', 'books_id', '=', 'books.id')

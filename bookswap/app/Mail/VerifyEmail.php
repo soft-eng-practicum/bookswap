@@ -11,14 +11,17 @@ class VerifyEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $user;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
         //
+        $this->user = $user;
     }
 
     /**
@@ -28,6 +31,8 @@ class VerifyEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.verifyemail');
+        return $this->view('emails.verifyemail')->with([
+          'email_token' => $this->user->email_token,
+        ]);;
     }
 }

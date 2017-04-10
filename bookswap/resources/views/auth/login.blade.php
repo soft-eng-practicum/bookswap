@@ -1,5 +1,7 @@
 @extends('layouts.app')
 <title>Book Swap: Login Page</title>
+<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
+
 <style>
 
 input[type=submit] {

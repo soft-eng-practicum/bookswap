@@ -3,6 +3,8 @@
 
 @section('content')
 
+<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">

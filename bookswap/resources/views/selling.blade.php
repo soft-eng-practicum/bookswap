@@ -1,6 +1,8 @@
 
 @extends('layouts.app')
 <title>Book Swap: Sell Page</title>
+<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
+
 <style>
 input[type=text], select {
 width: 90%;

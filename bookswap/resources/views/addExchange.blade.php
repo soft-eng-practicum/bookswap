@@ -81,6 +81,7 @@ font-weight: bold;
 }
 textarea:focus,
 input[type="text"]:focus,
+input[type="number"]:focus,
 .uneditable-input:focus {
 border: 0;
 border-bottom: 1px solid #000;
@@ -101,6 +102,15 @@ transition: all 300ms ease-in-out;
 }
 .panel-heading{
   text-align: center;
+
+}
+input[type=number] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+
 
 }
 </style>
@@ -126,13 +136,13 @@ transition: all 300ms ease-in-out;
                           <input type="radio" name="desc" value="bad"> Bad
                           <input type="radio" name="desc" value="fair"> Fair
                           <input type="radio" name="desc" value="good"> Good <br/> <br/>
-                          <textarea class="textarea" name="description" rows="3" cols="80" id="description" placeholder="Description.."></textarea>
+                          <textarea class="textarea" name="description" rows="3" cols="80" maxlength="150" id="description" placeholder="Enter description in less than 150 characters"></textarea>
                       </div>
                     </div>
 
                     <div class="form-group">
                       <label for="price">Price</label>
-                      <input type="text" class="form-control" id="price" name="price">
+                      <input type="text" class="form-control" id="price" name="price" placeholder="Enter integer only">
                     </div>
 
                     <div class="form-group btn-center">

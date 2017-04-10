@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
+
 <style>
 .w3-btn-block{
   width: 15%;
@@ -43,7 +45,6 @@
 }
 
 .footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;

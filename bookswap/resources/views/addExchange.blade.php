@@ -1,5 +1,8 @@
 
 @extends('layouts.app')
+
+<link rel="shortcut icon" href="{{{ asset('img/favicon.png') }}}">
+
 <style>
 input[type=text], select {
 width: 90%;

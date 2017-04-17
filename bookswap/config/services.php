@@ -20,9 +20,9 @@ return [
     ],
 
     'ses' => [
-        'key' => env('SES_KEY'),
-        'secret' => env('SES_SECRET'),
-        'region' => 'us-east-1',
+        'key' => env('AKIAJ6DWZUI3C5V4D3SA'),
+        'secret' => env('AgK4MV6veKZCyuKG6RP1H9Ccp3HNL5j4w8q8OXQ1ksnP'),
+        'region' => 'us-west-2',
     ],
 
     'sparkpost' => [

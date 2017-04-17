@@ -110,7 +110,7 @@
             }
             textarea:focus,
             input[type="text"]:focus,
-            .uneditable-input:focus {
+          .uneditable-input:focus {
          border: 0;
             border-bottom: 3px solid #403737;
             border-radius: 0;
@@ -207,6 +207,7 @@
                console.log( "Selected: " +  ui.item.value);
                window.location.href = '/test?title=' + ui.item.value;
              },
+
            });
            // enter keypress
            $('#search').keypress(function (e) {

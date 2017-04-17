@@ -132,25 +132,25 @@
             background-color: #efefef;
             text-align: center;
           }
-          ul {
+          .footer > ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
             }
 
-            li {
+           .footer li {
                 float: left;
             }
 
-            li a {
+            .footer li a {
                 display: block;
                 color: black;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
             }
-            li a:hover {
+            .footer li a:hover {
                 text-decoration: none;
               }
             .disabled {

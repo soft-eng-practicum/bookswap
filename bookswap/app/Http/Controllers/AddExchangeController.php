@@ -50,10 +50,11 @@ class AddExchangeController extends Controller
 
           'description' => 'required',
 
-          'price' => 'required',
+          'price' => ['required','regex:/[0-9.]+/'],
 
-
-
+        ],
+       [
+            'price.regex' => 'Only numbers. (i.e. 15.00 or 15)'
         ]);
 
         //create a new book using request data

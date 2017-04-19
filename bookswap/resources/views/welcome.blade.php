@@ -132,7 +132,7 @@
             background-color: #efefef;
             text-align: center;
           }
-          .footer > ul {
+          .footer ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;

@@ -98,8 +98,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'price' => [
+            'regex' => 'Only numbers. (i.e. 15.00 or 15)',
         ],
     ],
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
+
 use App\Exchange;
 use App\Books;
 
@@ -44,13 +45,12 @@ class AddExchangeController extends Controller
 
         //creates validation
 
-        $this->validate(request(),[
-
+      $this->validate(request(),[
           'desc' => 'required',
 
           'description' => 'required',
 
-          'price' => ['required','regex:/[0-9.]+/'],
+          'price' => ['required','regex:/^[0-9.]+$/'],
 
         ],
        [

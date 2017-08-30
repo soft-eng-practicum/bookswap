@@ -1,4 +1,4 @@
-# Team Mercury Fall 2017 - Bookswap
+# Bookswap: Team Mercury (Fall 2017) 
 
 ## Roles:
 * Code arhictect / lead programmer:

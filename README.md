@@ -1,3 +1,23 @@
+# Team Mercury Fall 2017 - Bookswap
+
+## Roles:
+* Code arhictect / lead programmer:
+* UI/UX designer:
+* Data modeler:
+* Team manager / client liaison:
+* Documentation lead: Sierra Williams
+* Testing lead: Sierra Williams
+
+## Repository URL:
+* link goes here
+
+## JIRA URL:
+* link goes here
+
+## Slack channel:
+
+# Previous Group (Spring 2017):
+
 ## Roles:
 * Back-End Developer: Adam, Hailey
 * Front-End Developer: Winston, Xavier

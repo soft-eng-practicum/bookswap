@@ -15,6 +15,7 @@
 * link goes here
 
 ## Slack channel:
+* link goes here
 
 # Previous Group (Spring 2017):
 

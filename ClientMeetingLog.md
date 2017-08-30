@@ -1,8 +1,7 @@
 # CLIENT MEETING LOG
 ## Client Meeting #1  
 DATE/TIME: 08.23.2017 @ 8:15p  
-LOCATION: B Atrium, near Einstein Bagel
-
+LOCATION: B Atrium, near Einstein Bagel  
 MEETING NOTES:  
 * Hailey is the original customer for this BookSwap project
 * Spoke briefly about 'aws' (Amazon Web Services)

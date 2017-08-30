@@ -1,7 +1,7 @@
 # Bookswap: Team Mercury (Fall 2017) 
 
 ## Roles:
-* Code arhictect / lead programmer:
+* Code architect / lead programmer:
 * UI/UX designer:
 * Data modeler:
 * Team manager / client liaison:

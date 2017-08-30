@@ -9,13 +9,13 @@
 * Testing lead: Sierra Williams
 
 ## Repository URL:
-* link goes here
+* [link](https://github.com/soft-eng-practicum/bookswap)
 
 ## JIRA URL:
 * link goes here
 
 ## Slack channel:
-* link goes here
+* [link](https://ggc-dev.slack.com/messages/C6RM2UF7U)
 
 # Previous Group (Spring 2017):
 

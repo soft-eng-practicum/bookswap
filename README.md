@@ -1,12 +1,12 @@
 # Bookswap: Team Mercury (Fall 2017) 
 
 ## Roles:
-1. Code architect / lead programmer: 
+1. Code architect / lead programmer: Chelsea D'Alessandro,
 2. UI/UX designer: 
 3. Data modeler: 
 4. Team manager / client liaison: Chelsea D'Alessandro
 5. Documentation lead: Sierra Williams
-6. Testing lead: Sierra Williams
+6. Testing: Sierra Williams, Chelsea D'Alessandro, 
 
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)

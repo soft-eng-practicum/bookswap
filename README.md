@@ -12,7 +12,7 @@
 * [github repository](https://github.com/soft-eng-practicum/bookswap)
 
 ## JIRA URL:
-* [JIRA page] (http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?projectKey=BOOK&rapidView=9&view=planning.nodetail)
+* [JIRA page](http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?projectKey=BOOK&rapidView=9&view=planning.nodetail)
 
 ## Slack channel:
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)

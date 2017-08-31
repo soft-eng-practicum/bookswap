@@ -1,12 +1,12 @@
 # Bookswap: Team Mercury (Fall 2017)
 
 ## Roles:
-1. Code architect / lead programmer: Chelsea D'Alessandro,
+1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao
 2. UI/UX designer: Alek Gartland
-3. Data modeler: 
+3. Data modeler: Waylon Lao
 4. Team manager / client liaison: Chelsea D'Alessandro
 5. Documentation lead: Sierra Williams
-6. Testing: Sierra Williams, Chelsea D'Alessandro, Alek Gartland
+6. Testing: Sierra Williams, Chelsea D'Alessandro, Alek Gartland, Waylon Lao
 
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)

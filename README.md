@@ -1,8 +1,8 @@
-# Bookswap: Team Mercury (Fall 2017) 
+# Bookswap: Team Mercury (Fall 2017)
 
 ## Roles:
 * Code architect / lead programmer:
-* UI/UX designer:
+* UI/UX designer: Alek Gartland
 * Data modeler:
 * Team manager / client liaison:
 * Documentation lead: Sierra Williams

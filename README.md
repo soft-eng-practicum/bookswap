@@ -1,7 +1,7 @@
 # Bookswap: Team Mercury (Fall 2017)
 
 ## Roles:
-1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao, Sierra Williams
+1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao, Sierra Williams, Alek Gartland
 2. UI/UX designer: Alek Gartland
 3. Data modeler: Waylon Lao
 4. Team manager / client liaison: Chelsea D'Alessandro

@@ -17,6 +17,9 @@
 ## Slack channel:
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)
 
+## TinyUrl:
+* https://tinyurl.com/BookSwapGGC  -Working link
+
 # Previous Group (Spring 2017):
 
 ## Roles:

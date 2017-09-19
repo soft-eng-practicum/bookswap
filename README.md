@@ -17,6 +17,14 @@
 ## Slack channel:
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)
 
+## Install PHP/Laravel/MySql
+1. Install Xampp. This will also install PHP and MySql for your
+2. Get Composer (https://getcomposer.org/download/). To check if it's been installed, open Terminal or Command Line and type in: composer. Hit enter and if a list of commands pop up then you're good to go.
+3. With Composer installed, install Laravel with by typing: composer global require "laravel/installer" into the Command Line/Terminal. To check if it's installed, run: laravel -v. If the Laravel version pops up, you're all set.
+4. Go to the bookswap folder from Command Line/Terminal and run: laravel update.
+5. ?????
+6. Profit.
+
 # Previous Group (Spring 2017):
 
 ## Roles:

@@ -1,7 +1,7 @@
 # Bookswap: Team Mercury (Fall 2017)
 
 ## Roles:
-1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao
+1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao, Sierra Williams, Alek Gartland
 2. UI/UX designer: Alek Gartland
 3. Data modeler: Waylon Lao
 4. Team manager / client liaison: Chelsea D'Alessandro
@@ -12,10 +12,13 @@
 * [github repository](https://github.com/soft-eng-practicum/bookswap)
 
 ## JIRA URL:
-* [JIRA page] (http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?projectKey=BOOK&rapidView=9&view=planning.nodetail)
+* [JIRA page](http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?projectKey=BOOK&rapidView=9&view=planning.nodetail)
 
 ## Slack channel:
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)
+
+## TinyUrl
+* https://tinyurl.com/BookSwapGGC -Working link
 
 ## Install PHP/Laravel/MySql
 1. Install Xampp. This will also install PHP and MySql for your

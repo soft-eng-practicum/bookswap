@@ -17,8 +17,9 @@
 ## Slack channel:
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)
 
-## TinyUrl
-* https://tinyurl.com/BookSwapGGC -Working link
+## Links
+* https://tinyurl.com/BookSwapGGC -Working link for BookSwap
+* https://docs.google.com/document/d/1U2ODsEr3x4kmcTHiSajM4G54Clvliu1H0CFBkVO4snY/edit -Helpful links in general
 
 ## Install PHP/Laravel/MySql
 1. Install Xampp. This will also install PHP and MySql for your

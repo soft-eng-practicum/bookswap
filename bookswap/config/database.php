@@ -32,12 +32,12 @@
 	    */
 
 	    'connections' => [
-
-	        'sqlite' => [
-	            'driver' => 'sqlite',
-	            'database' => env('DB_DATABASE', database_path('database.sqlite')),
-	            'prefix' => '',
-	        ],
+					//
+	        // 'sqlite' => [
+	        //     'driver' => 'sqlite',
+	        //     'database' => env('DB_DATABASE', database_path('database.sqlite')),
+	        //     'prefix' => '',
+	        // ],
 
 	        'mysql' => [
 	            'driver'    => 'mysql',
@@ -52,17 +52,17 @@
 	            'engine' => null,
 	        ],
 
-	        'pgsql' => [
-	            'driver'   => 'pgsql',
-	            'host'     => 'localhost',
-	            'database' => 'swap',
-	            'username' => 'root',
-	            'password' => 'admin',
-	            'charset'  => 'utf8',
-	            'prefix'   => '',
-	            'schema'   => 'public',
-	            'sslmode' => 'prefer',
-	        ],
+	        // 'pgsql' => [
+	        //     'driver'   => 'pgsql',
+	        //     'host'     => 'localhost',
+	        //     'database' => 'swap',
+	        //     'username' => 'root',
+	        //     'password' => 'admin',
+	        //     'charset'  => 'utf8',
+	        //     'prefix'   => '',
+	        //     'schema'   => 'public',
+	        //     'sslmode' => 'prefer',
+	        // ],
 
 	    ],
 

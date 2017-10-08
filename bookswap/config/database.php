@@ -1,10 +1,10 @@
 <?php
 
 if (!defined('RDS_HOSTNAME')) {
-  define('RDS_HOSTNAME', $_SERVER['RDS_HOSTNAME']);
-  define('RDS_USERNAME', $_SERVER['RDS_USERNAME']);
-  define('RDS_PASSWORD', $_SERVER['RDS_PASSWORD']);
-  define('RDS_DB_NAME', $_SERVER['RDS_DB_NAME']);
+  define('RDS_HOSTNAME', $_SERVER['mybookswap.c30unm3pxfde.us-east-2.rds.amazonaws.com']);
+  define('RDS_USERNAME', $_SERVER['waylonBook']);
+  define('RDS_PASSWORD', $_SERVER['laoSwapping']);
+  define('RDS_DB_NAME', $_SERVER['waylonDB']);
 }
 
 return [

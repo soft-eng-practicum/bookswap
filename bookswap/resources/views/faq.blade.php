@@ -160,9 +160,25 @@ function updateSelectedCategory() {
   <ul id="basics" class="faq-group">
     <li class="faq-title"><h2>Basics</h2></li>
     <li>
-      <a class="trigger" href="#0">How do I change my password?</a>
+      <a class="trigger" href="#0">How do I sell a book?</a>
       <div class="faq-content">
-        <p>Login and click on reset password in settings.</p>
+        <p>After creating an account, click on the sell tab. In the selling form,
+           start typing the title of the book you want to sell. Don't worry about
+           knowing all the information, our autocomplete will help you! Describe
+           the book you have and what you're willing to sell it for--it doesn't
+           just have to be for money!
+           (i.e. calculus II book, computer mouse, 20 pencils...) </p>
+      </div> <!-- faq-content -->
+    </li>
+
+    <li>
+      <a class="trigger" href="#0">How do I buy a book?</a>
+      <div class="faq-content">
+        <p>Go to our home page and begin searching our database. If you find
+          book you like, contact the seller by clicking on their email which will
+          send you to ClawMail. You can also just browse books by going to our
+          explore page.
+        </p>
       </div> <!-- faq-content -->
     </li>
 
@@ -170,6 +186,13 @@ function updateSelectedCategory() {
       <a class="trigger" href="#0">How do I sign up?</a>
       <div class="faq-content">
         <p>Signing up is easy! Click on register to get started.</p>
+      </div> <!-- faq-content -->
+    </li>
+
+    <li>
+      <a class="trigger" href="#0">How do I change my password?</a>
+      <div class="faq-content">
+        <p>Login and click on reset password in settings.</p>
       </div> <!-- faq-content -->
     </li>
 
@@ -224,7 +247,7 @@ function updateSelectedCategory() {
     <li>
       <a class="trigger" href="#0">How do I pay for my purchase?</a>
       <div class="faq-content">
-        <p>We suggest customers to pay in the form of cash.</p>
+        <p>This is up to you and the seller! However, we suggest customers to pay in the form of cash.</p>
       </div> <!-- faq-content -->
     </li>
   </ul> <!-- faq-group -->

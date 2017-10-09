@@ -145,7 +145,7 @@ input[type=number] {
 
                     <div class="form-group">
                       <label for="price">Price</label>
-                      <input type="text" class="form-control" id="price" name="price" placeholder="Enter integer only">
+                      <input type="text" class="form-control" id="price" name="price" placeholder="Enter integer only (i.e. 15.00 or 5)">
                     </div>
 
                     <div class="form-group btn-center">

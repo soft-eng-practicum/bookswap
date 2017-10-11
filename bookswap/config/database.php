@@ -1,6 +1,6 @@
 <?php
 
-<<<<<<< HEAD
+
 	return [
 
 	    /*

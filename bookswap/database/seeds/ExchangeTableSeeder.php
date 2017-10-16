@@ -17,7 +17,7 @@ class ExchangeTableSeeder extends Seeder
             'desc' => 'fair',
 			'description' => 'Slightly used',
 			'price' => '22.22',
-			'user_id' => '4',
+			'user_id' => '1',
 			'books_id' => '2'
 		]);
     }

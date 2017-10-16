@@ -50,10 +50,10 @@ return [
 
 				'mysql' => [
 						'driver'    => 'mysql',
-						'host'      => 'localhost',
-						'database'  => 'bookswap',
-						'username'  => 'root',
-						'password'  => '',
+						'host'      => 'mybookswap.c30unm3pxfde.us-east-2.rds.amazonaws.com',
+						'database'  => 'waylonDB',
+						'username'  => 'waylonBook',
+						'password'  => 'laoSwapping',
 						'charset'   => 'utf8',
 						'collation' => 'utf8_unicode_ci',
 						'prefix'    => '',

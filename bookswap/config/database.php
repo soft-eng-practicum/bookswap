@@ -42,9 +42,9 @@
 	        'mysql' => [
 	            'driver'    => 'mysql',
 	            'host'      => 'localhost',
-	            'database'  => 'swap',
+	            'database'  => 'bookswap',
 	            'username'  => 'root',
-	            'password'  => 'admin',
+	            'password'  => '',
 	            'charset'   => 'utf8',
 	            'collation' => 'utf8_unicode_ci',
 	            'prefix'    => '',

@@ -8,8 +8,8 @@
 5. Documentation lead: Sierra Williams
 6. Testing: Sierra Williams, Chelsea D'Alessandro, Alek Gartland, Waylon Lao
 
-##Bookswap URL:
-* [Bookswap](bookswap-dev.us-east-1.elasticbeanstalk.com)
+## Bookswap URL:
+* [Bookswap](https://bookswap-dev.us-east-1.elasticbeanstalk.com)
 
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)

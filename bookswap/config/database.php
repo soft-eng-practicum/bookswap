@@ -63,8 +63,8 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'bookswap.cdif7d8ejqc4.us-east-1.rds.amazonaws.com',
-            'database'  => 'bookswapDB',
+            'host'      => 'bookswapdb-dev.cdif7d8ejqc4.us-east-1.rds.amazonaws.com',
+            'database'  => 'bookswapdb',
             'username'  => 'bookswap_master',
             'password'  => 'bookswapDatabase6735',
             'charset'   => 'utf8',

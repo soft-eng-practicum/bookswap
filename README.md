@@ -8,6 +8,9 @@
 5. Documentation lead: Sierra Williams
 6. Testing: Sierra Williams, Chelsea D'Alessandro, Alek Gartland, Waylon Lao
 
+##Bookswap URL:
+*[Bookswap](bookswap-dev.us-east-1.elasticbeanstalk.com)
+
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)
 
@@ -18,7 +21,6 @@
 * [mercury](https://ggc-dev.slack.com/messages/C6RM2UF7U)
 
 ## Links
-* https://tinyurl.com/BookSwapGGC -Working link for BookSwap
 * https://docs.google.com/document/d/1U2ODsEr3x4kmcTHiSajM4G54Clvliu1H0CFBkVO4snY/edit -Helpful links in general
 
 ## Install PHP/Laravel/MySql

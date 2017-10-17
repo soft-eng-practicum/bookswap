@@ -28,8 +28,9 @@
 2. Get Composer (https://getcomposer.org/download/). To check if it's been installed, open Terminal or Command Line and type in: composer. Hit enter and if a list of commands pop up then you're good to go.
 3. With Composer installed, install Laravel with by typing: composer global require "laravel/installer" into the Command Line/Terminal. To check if it's installed, run: laravel -v. If the Laravel version pops up, you're all set.
 4. Go to the bookswap folder from Command Line/Terminal and run: laravel update.
-5. ?????
-6. Profit.
+
+## Connect Elastic Beanstalk with the RDS database
+* https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html?icmpid=docs_elasticbeanstalk_console
 
 # Previous Group (Spring 2017):
 

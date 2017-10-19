@@ -1,4 +1,7 @@
 branch-defaults:
+  awsBranch:
+    environment: bookswap2
+    group_suffix: null
   default:
     environment: Sample-env
   master:
@@ -8,11 +11,14 @@ environment-defaults:
   Sample-env:
     branch: null
     repository: null
+  bookswap2:
+    branch: null
+    repository: null
 global:
   application_name: ggcbookswap
   branch: null
-  default_ec2_keyname: bookswap
-  default_platform: PHP 5.4
+  default_ec2_keyname: bookswap2
+  default_platform: PHP 7.0
   default_region: us-west-2
   instance_profile: null
   platform_name: null

@@ -14,6 +14,7 @@
 
     <!-- IMPORT: Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abel|Cinzel+Decorative|Cinzel+Decorative:bold|Cinzel+Decorative:700">
 
     <!-- PAGE: Title -->
@@ -29,11 +30,11 @@
 <body>
     <div id="app">
         <!-- PAGE: NAVBAR -->
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-static-top">
             <div class="container">
 
                 <!-- NAVBAR: Header -->
-                <div class="navbar-header">
+                <div>
 
                     <!-- NAVBAR: HAMBURGER (Collapsed) -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -68,7 +69,7 @@
                         @if (Route::has('login'))
                         <div class="links">
                         <a href="{{ url('/welcome') }}"><span id="currentlink">Home</span></a>
-                        <a href="{{ url('/livesearch') }}">Search</a>
+                        <a href="{{ url('/test') }}">Search</a>
                         <a href="{{ url('/about') }}">About</a>
                         <a href="{{ url('/faq') }}">FAQ</a>
 
@@ -84,8 +85,9 @@
                         @endif
                         -->
                         <li><a href="{{ url('/welcome') }}">Home</a></li>
-                        <li><a href="{{ url('/livesearch') }}">Search</a></li>
-                        <li><a href="{{ url('/about') }}">About us</a></li>
+                        <li><a href="{{ url('/test') }}">Search</a></li>
+                        <li><a href="{{ url('/about') }}">About</a></li>
+                        <li><a href="{{ url('/faq') }}">FAQ</a></li>
 
                         @if (Auth::guest())
                         <li><a href="{{ route('login') }}">Login</a></li>
@@ -126,11 +128,16 @@
 @yield('content')
 </div>
 
+<!-- PAGE SECTION: Footer -->
+<footer class="container">
+    Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
+</footer>
+
 <!-- Scripts -->
 <script src="/js/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-crossorigin="anonymous"></script>
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
 </body>
 </html>

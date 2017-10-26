@@ -100,11 +100,12 @@ li a:hover {
 </style>
 
 @section('content')
+<!-- change to header.. -->
+<h1>Login</h1>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+            <div class="panel">
                 <div class="panel-body">
 
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
@@ -163,7 +164,3 @@ li a:hover {
     </div>
 </div>
 @endsection
-<!-- PAGE SECTION: Footer -->
-<footer>
-    Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
-</footer>

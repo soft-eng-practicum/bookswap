@@ -22,10 +22,9 @@
 
     <!-- IMPORT: jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script
-    src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-    crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
 
     <!-- CODE: Laravel (token) -->
     <script>
@@ -73,14 +72,14 @@
         text-align: center;
         position: relative;
     }
-    .links > a {
+    .links a {
         color: #666666;
         padding: 0 20px;
         font-size: 1.2em;
         text-decoration: none;
         text-transform: uppercase;
     }
-    .links > a:hover {
+    .links a:hover {
         color: #AAFF00;
         text-decoration: none;
     }
@@ -183,7 +182,7 @@
         @if (Route::has('login'))
         <div class="links">
             <a href="{{ url('/welcome') }}"><span id="currentlink">Home</span></a>
-            <a href="{{ url('/livesearch') }}">Search</a>
+            <a href="{{ url('/test') }}">Search</a>
             <a href="{{ url('/about') }}">About</a>
             <a href="{{ url('/faq') }}">FAQ</a>
 

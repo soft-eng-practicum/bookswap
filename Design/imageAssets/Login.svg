@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1721 -1187 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Login-2);
+      }
+
+      .cls-11, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #777;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-size: 80px;
+      }
+
+      .cls-4, .cls-5, .cls-7, .cls-9 {
+        font-family: Abel-Regular, Abel;
+      }
+
+      .cls-5, .cls-6, .cls-9 {
+        fill: #af0;
+      }
+
+      .cls-5 {
+        font-size: 16px;
+      }
+
+      .cls-6, .cls-8 {
+        stroke: #333;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #555;
+      }
+
+      .cls-7, .cls-9 {
+        font-size: 24px;
+      }
+
+      .cls-10 {
+        stroke: none;
+      }
+
+      .cls-12 {
+        fill: #333;
+      }
+
+      .cls-13 {
+        filter: url(#LOGIN);
+      }
+    </style>
+    <filter id="LOGIN" x="1938.5" y="-816.5" width="931" height="127" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Login-2">
+      <rect x="1721" y="-1187" width="1366" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="Login-2" data-name="Login" class="cls-1">
+    <rect class="cls-12" x="1721" y="-1187" width="1366" height="768"/>
+    <g id="Group_27" data-name="Group 27" transform="translate(1721 -1168)">
+      <line id="Line_17" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="password" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">password</tspan></text>
+    </g>
+    <g id="Group_28" data-name="Group 28" transform="translate(1721 -1217)">
+      <line id="Line_17-2" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="email" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">email</tspan></text>
+    </g>
+    <g class="cls-13" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <text id="LOGIN-3" data-name="LOGIN" class="cls-4" transform="translate(1946 -812)"><tspan x="367.336" y="78">LOGIN</tspan></text>
+    </g>
+    <text id="create_account" data-name="create account" class="cls-5" transform="translate(2354 -558)"><tspan x="3.98" y="16">create account</tspan></text>
+    <text id="forgot_password" data-name="forgot password" class="cls-5" transform="translate(2354 -578)"><tspan x="0.453" y="16">forgot password</tspan></text>
+    <g id="Group_206" data-name="Group 206" transform="translate(1656 -1187)">
+      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-6" transform="translate(1071)">
+        <rect class="cls-10" width="90" height="40"/>
+        <rect class="cls-11" x="0.5" y="0.5" width="89" height="39"/>
+      </g>
+      <text id="LOGIN-4" data-name="LOGIN" class="cls-7" transform="translate(1088.733 29)"><tspan x="0" y="0">LOGIN</tspan></text>
+    </g>
+    <g id="Group_207" data-name="Group 207" transform="translate(1749 -1187)">
+      <g id="Group_162" data-name="Group 162">
+        <g id="Rectangle_10" data-name="Rectangle 10" class="cls-8" transform="translate(1158)">
+          <rect class="cls-10" width="90" height="40"/>
+          <rect class="cls-11" x="0.5" y="0.5" width="89" height="39"/>
+        </g>
+        <text id="FAQ" class="cls-9" transform="translate(1169.613 4)"><tspan x="15.481" y="24">FAQ</tspan></text>
+      </g>
+    </g>
+    <g id="Group_208" data-name="Group 208" transform="translate(1721 -1187)">
+      <g id="Group_163" data-name="Group 163" transform="translate(118 -20)">
+        <path id="Path_37" data-name="Path 37" class="cls-8" d="M.5.5h89v39H.5Z" transform="translate(1158 20)"/>
+        <text id="ABOUT" class="cls-9" transform="translate(1169.613 24)"><tspan x="3.586" y="24">ABOUT</tspan></text>
+      </g>
+    </g>
+    <g id="Group_209" data-name="Group 209" transform="translate(1522 -1187)">
+      <g id="Rectangle_13" data-name="Rectangle 13" class="cls-8" transform="translate(1295)">
+        <rect class="cls-10" width="89.715" height="40"/>
+        <rect class="cls-11" x="0.5" y="0.5" width="88.715" height="39"/>
+      </g>
+      <g id="Group_169" data-name="Group 169">
+        <text id="SEARCH" class="cls-9" transform="translate(1295.285 4)"><tspan x="7.692" y="24">SEARCH</tspan></text>
+      </g>
+    </g>
+    <g id="Group_210" data-name="Group 210" transform="translate(1342 -1207)">
+      <path id="Path_41" data-name="Path 41" class="cls-8" d="M.5.5h89v39H.5Z" transform="translate(1295 20)"/>
+      <text id="HOME" class="cls-9" transform="translate(1295 24)"><tspan x="17.924" y="24">HOME</tspan></text>
+    </g>
+  </g>
+</svg>

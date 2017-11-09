@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -1187 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Home);
+      }
+
+      .cls-2 {
+        fill: #7b0;
+        font-size: 80px;
+      }
+
+      .cls-13, .cls-15, .cls-2 {
+        font-family: Abel-Regular, Abel;
+      }
+
+      .cls-13, .cls-14, .cls-3 {
+        fill: #af0;
+      }
+
+      .cls-4, .cls-6, .cls-8 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-4 {
+        stroke: #af0;
+        stroke-width: 20px;
+      }
+
+      .cls-10, .cls-17, .cls-5, .cls-9 {
+        fill: none;
+      }
+
+      .cls-5, .cls-6, .cls-8, .cls-9 {
+        stroke: #ccc;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: 10px;
+      }
+
+      .cls-11, .cls-7 {
+        fill: #ccc;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-width: 3px;
+      }
+
+      .cls-10 {
+        stroke: #777;
+        stroke-width: 2px;
+      }
+
+      .cls-11 {
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-12, .cls-15 {
+        fill: #555;
+      }
+
+      .cls-12, .cls-14 {
+        stroke: #333;
+      }
+
+      .cls-13, .cls-15 {
+        font-size: 24px;
+      }
+
+      .cls-16 {
+        stroke: none;
+      }
+
+      .cls-18 {
+        fill: #333;
+      }
+
+      .cls-19 {
+        filter: url(#BOOKSWAP);
+      }
+    </style>
+    <filter id="BOOKSWAP" x="217.5" y="-816.5" width="931" height="127" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Home">
+      <rect y="-1187" width="1366" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="Home" class="cls-1">
+    <rect class="cls-18" y="-1187" width="1366" height="768"/>
+    <g class="cls-19" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <text id="BOOKSWAP-2" data-name="BOOKSWAP" class="cls-2" transform="translate(225 -812)"><tspan x="283.898" y="78">BOOKSWAP</tspan></text>
+    </g>
+    <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-8 -1275)">
+      <g id="Group_2" data-name="Group 2" transform="translate(113 -2)">
+        <path id="Path_42" data-name="Path 42" class="cls-3" d="M0,0H15V38H0Z" transform="translate(722.099 389.47) rotate(25)"/>
+        <path id="Path_27" data-name="Path 27" class="cls-4" d="M0,0H300" transform="translate(420 420)"/>
+        <path id="Path_26" data-name="Path 26" class="cls-4" d="M0,0H300" transform="translate(515.434 190) rotate(45)"/>
+      </g>
+      <g id="Group_3" data-name="Group 3">
+        <line id="Line_5" data-name="Line 5" class="cls-5" x2="288" transform="translate(620.677 200.677) rotate(45)"/>
+        <path id="Path_36" data-name="Path 36" class="cls-6" d="M0,0H288" transform="translate(535.5 403.5)"/>
+        <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-7" width="5" height="10" transform="translate(824.347 398.412) rotate(25)"/>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(-364 8)">
+        <path id="Path_28" data-name="Path 28" class="cls-8" d="M0,0H288" transform="matrix(1, 0.017, -0.017, 1, 902, 393)"/>
+        <path id="Path_34" data-name="Path 34" class="cls-8" d="M0,0H288" transform="matrix(0.995, 0.105, -0.105, 0.995, 903.241, 366.498)"/>
+        <path id="Path_35" data-name="Path 35" class="cls-8" d="M0,0H288" transform="translate(902.5 382) rotate(3)"/>
+        <line id="Line_8" data-name="Line 8" class="cls-9" x2="288" transform="translate(911.407 323.032) rotate(15)"/>
+        <path id="Path_33" data-name="Path 33" class="cls-8" d="M0,0H288" transform="matrix(0.985, 0.174, -0.174, 0.985, 906.688, 347.521)"/>
+        <path id="Path_43" data-name="Path 43" class="cls-8" d="M0,0H288" transform="translate(943.068 248.143) rotate(31)"/>
+        <path id="Path_32" data-name="Path 32" class="cls-8" d="M0,0H288" transform="translate(920 296.696) rotate(20.5)"/>
+        <line id="Line_12" data-name="Line 12" class="cls-9" x2="288" transform="matrix(0.899, 0.438, -0.438, 0.899, 931.074, 270.875)"/>
+        <path id="Path_30" data-name="Path 30" class="cls-8" d="M0,0H288" transform="translate(953.542 231.905) rotate(35)"/>
+        <path id="Path_29" data-name="Path 29" class="cls-8" d="M0,0H288" transform="translate(963.026 219.845) rotate(38)"/>
+        <path id="Path_31" data-name="Path 31" class="cls-8" d="M0,0H288" transform="translate(976.487 204.145) rotate(42)"/>
+        <line id="Line_16" data-name="Line 16" class="cls-9" x2="288" transform="matrix(0.719, 0.695, -0.695, 0.719, 983.915, 197.469)"/>
+      </g>
+    </g>
+    <g id="Group_21" data-name="Group 21" transform="translate(0 -1168)">
+      <line id="Line_17" data-name="Line 17" class="cls-10" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="search" class="cls-11" transform="translate(539 565)"><tspan x="0" y="0">search</tspan></text>
+    </g>
+    <g id="Group_161" data-name="Group 161" transform="translate(-65 -1187)">
+      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-12" transform="translate(1071)">
+        <rect class="cls-16" width="90" height="40"/>
+        <rect class="cls-17" x="0.5" y="0.5" width="89" height="39"/>
+      </g>
+      <text id="LOGIN" class="cls-13" transform="translate(1088.733 29)"><tspan x="0" y="0">LOGIN</tspan></text>
+    </g>
+    <g id="Group_168" data-name="Group 168" transform="translate(28 -1187)">
+      <g id="Group_162" data-name="Group 162">
+        <g id="Rectangle_10" data-name="Rectangle 10" class="cls-12" transform="translate(1158)">
+          <rect class="cls-16" width="90" height="40"/>
+          <rect class="cls-17" x="0.5" y="0.5" width="89" height="39"/>
+        </g>
+        <text id="FAQ" class="cls-13" transform="translate(1169.613 4)"><tspan x="15.481" y="24">FAQ</tspan></text>
+      </g>
+    </g>
+    <g id="Group_167" data-name="Group 167" transform="translate(0 -1187)">
+      <g id="Group_163" data-name="Group 163" transform="translate(118 -20)">
+        <path id="Path_37" data-name="Path 37" class="cls-12" d="M.5.5h89v39H.5Z" transform="translate(1158 20)"/>
+        <text id="ABOUT" class="cls-13" transform="translate(1169.613 24)"><tspan x="3.586" y="24">ABOUT</tspan></text>
+      </g>
+    </g>
+    <g id="Group_165" data-name="Group 165" transform="translate(-199 -1187)">
+      <g id="Rectangle_13" data-name="Rectangle 13" class="cls-12" transform="translate(1295)">
+        <rect class="cls-16" width="89.715" height="40"/>
+        <rect class="cls-17" x="0.5" y="0.5" width="88.715" height="39"/>
+      </g>
+      <g id="Group_169" data-name="Group 169">
+        <text id="SEARCH-2" data-name="SEARCH" class="cls-13" transform="translate(1295.285 4)"><tspan x="7.692" y="24">SEARCH</tspan></text>
+      </g>
+    </g>
+    <g id="Group_166" data-name="Group 166" transform="translate(-379 -1207)">
+      <path id="Path_41" data-name="Path 41" class="cls-14" d="M.5.5h89v39H.5Z" transform="translate(1295 20)"/>
+      <text id="HOME-2" data-name="HOME" class="cls-15" transform="translate(1295 24)"><tspan x="17.924" y="24">HOME</tspan></text>
+    </g>
+  </g>
+</svg>

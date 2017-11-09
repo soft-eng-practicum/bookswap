@@ -1,10 +1,108 @@
-
-/* --------------------------------
-
-Primary style
-
--------------------------------- */
+/*  IMPORT: FONTS - Google fonts:
+        Abel (main)
+        Cinzel Decorative 700 ('swap' deco)
+        may use another for user input (TBD after styles wipe!)
+*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
+@import url('https://fonts.googleapis.com/css?family=Abel|Cinzel+Decorative|Cinzel+Decorative:bold|Cinzel+Decorative:700');
+
+/*  IMPORT: Tears... T.T
+</script>
+
+<!-- CSS: Styles (believed to be a copy/paste of all styles for all pages) -->
+<style>
+html, body {
+    background-color: #333333;
+    color: #CCCCCC;
+    font-family: 'Abel', sans-serif;
+    width: 95%;
+    margin: auto;
+    min-witdh: 800px;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header, footer {
+    position: absolute;
+    padding: .2rem;
+    padding: 10px 10px;
+}
+header {
+    font-size: 1.2em;
+    float: right;
+    top: 0;
+    right: 0;
+    position: top;
+}
+footer {
+    font-size: .8em;
+    bottom: 0;
+    left: 0;
+    position: bottom;
+}
+main {
+    text-align: center;
+    position: relative;
+}
+.links a {
+    color: #666666;
+    padding: 0 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.links a:hover {
+    color: #AAFF00;
+    text-decoration: none;
+}
+#currentlink {
+    color: #AAFF00;
+}
+/* LOGO STYLING *\
+#logo-img-home-big {
+    width: 400px;
+}
+#logo-img-small {
+    width: 75px;
+}
+#logo-name-home-big {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 6em;
+    color: #77BB00;
+}
+#logo-name span {
+    color: #77BB00;
+}
+#logo-name-swap span {
+    font-weight: 700;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.form-control {
+    padding-top: 45px;
+    background-color: #333;
+    border: 0;
+    border-bottom: 3px solid #ccc;
+    outline: 0;
+    box-shadow: none;
+    font-weight: bold;
+}
+input[type=text] {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+textarea:focus, input[type="text"]:focus, .uneditable-input:focus {
+    border: 0;
+    border-bottom: 3px solid #403737;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    transition: all 300ms ease-in-out;
+}
+</style>
+*/
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,10 +112,10 @@ Primary style
     content: '';
 }
 body {
-    font-size: 100%!important;
-    font-family: Raleway;
-    color: #4e5359;
-    background-color: #f3f3f5;
+    font-size: 100%;
+    font-family: Abel;
+    color: #CCCCCC;
+    background-color: #333333;
 }
 body::after {
     /* overlay layer visible on small devices when the right panel slides in */
@@ -52,10 +150,9 @@ a {
     color: #a9c056;
     text-decoration: none;
 }
+
 /* --------------------------------
-
 Main components
-
 -------------------------------- */
 header {
     position: relative;
@@ -72,6 +169,19 @@ header h1 {
     font-size: 20px!important;
     font-size: 1.25rem;
     padding-top: 100px!important;
+}
+footer {
+    font-size: .8em;
+    bottom: 10;
+    left: 10;
+    position: fixed;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 6em;
+    color: #EEEEEE;
 }
 @media only screen and (min-width: 1024px) {
     header {
@@ -266,7 +376,6 @@ header h1 {
         padding-left: 0;
     }
 }
-
 .cd-close-panel {
     position: fixed;
     top: 5px;

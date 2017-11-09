@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3442 -1187 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-New_User);
+      }
+
+      .cls-2, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #777;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-size: 80px;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        font-family: Abel-Regular, Abel;
+      }
+
+      .cls-5, .cls-7 {
+        fill: #af0;
+      }
+
+      .cls-5 {
+        font-size: 16px;
+      }
+
+      .cls-6 {
+        fill: #555;
+        stroke: #333;
+      }
+
+      .cls-7 {
+        font-size: 24px;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: #333;
+      }
+
+      .cls-11 {
+        filter: url(#CREATE_ACCOUNT);
+      }
+    </style>
+    <filter id="CREATE_ACCOUNT" x="3659.5" y="-991.5" width="931" height="127" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-New_User">
+      <rect x="3442" y="-1187" width="1366" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="New_User" data-name="New User" class="cls-1">
+    <rect class="cls-10" x="3442" y="-1187" width="1366" height="768"/>
+    <g id="Group_34" data-name="Group 34" transform="translate(3442 -1168)">
+      <line id="Line_17" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="password_again_" data-name="password (again)" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">password (again)</tspan></text>
+    </g>
+    <g id="Group_35" data-name="Group 35" transform="translate(3442 -1217)">
+      <line id="Line_17-2" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="password" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">password</tspan></text>
+    </g>
+    <g class="cls-11" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <text id="CREATE_ACCOUNT-2" data-name="CREATE ACCOUNT" class="cls-4" transform="translate(3667 -987)"><tspan x="186.945" y="78">CREATE ACCOUNT</tspan></text>
+    </g>
+    <text id="already_have_an_account" data-name="already have an account" class="cls-5" transform="translate(4050 -558)"><tspan x="1.77" y="16">already have an account</tspan></text>
+    <g id="Group_40" data-name="Group 40" transform="translate(3442 -1266)">
+      <line id="Line_17-3" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="email_again_" data-name="email (again)" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">email (again)</tspan></text>
+    </g>
+    <g id="Group_41" data-name="Group 41" transform="translate(3442 -1315)">
+      <line id="Line_17-4" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="email" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">email</tspan></text>
+    </g>
+    <g id="Group_42" data-name="Group 42" transform="translate(3442 -1364)">
+      <line id="Line_17-5" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="name" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">name</tspan></text>
+    </g>
+    <g id="Group_43" data-name="Group 43" transform="translate(3442 -1413)">
+      <line id="Line_17-6" data-name="Line 17" class="cls-2" y1="2" x2="300" transform="translate(533.5 575)"/>
+      <text id="username" class="cls-3" transform="translate(539 565)"><tspan x="0" y="0">username</tspan></text>
+    </g>
+    <g id="Group_211" data-name="Group 211" transform="translate(3377 -1187)">
+      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-6" transform="translate(1071)">
+        <rect class="cls-8" width="90" height="40"/>
+        <rect class="cls-9" x="0.5" y="0.5" width="89" height="39"/>
+      </g>
+      <text id="LOGIN" class="cls-7" transform="translate(1088.733 29)"><tspan x="0" y="0">LOGIN</tspan></text>
+    </g>
+    <g id="Group_212" data-name="Group 212" transform="translate(3470 -1187)">
+      <g id="Group_162" data-name="Group 162">
+        <g id="Rectangle_10" data-name="Rectangle 10" class="cls-6" transform="translate(1158)">
+          <rect class="cls-8" width="90" height="40"/>
+          <rect class="cls-9" x="0.5" y="0.5" width="89" height="39"/>
+        </g>
+        <text id="FAQ" class="cls-7" transform="translate(1169.613 4)"><tspan x="15.481" y="24">FAQ</tspan></text>
+      </g>
+    </g>
+    <g id="Group_213" data-name="Group 213" transform="translate(3442 -1187)">
+      <g id="Group_163" data-name="Group 163" transform="translate(118 -20)">
+        <path id="Path_37" data-name="Path 37" class="cls-6" d="M.5.5h89v39H.5Z" transform="translate(1158 20)"/>
+        <text id="ABOUT" class="cls-7" transform="translate(1169.613 24)"><tspan x="3.586" y="24">ABOUT</tspan></text>
+      </g>
+    </g>
+    <g id="Group_214" data-name="Group 214" transform="translate(3243 -1187)">
+      <g id="Rectangle_13" data-name="Rectangle 13" class="cls-6" transform="translate(1295)">
+        <rect class="cls-8" width="89.715" height="40"/>
+        <rect class="cls-9" x="0.5" y="0.5" width="88.715" height="39"/>
+      </g>
+      <g id="Group_169" data-name="Group 169">
+        <text id="SEARCH" class="cls-7" transform="translate(1295.285 4)"><tspan x="7.692" y="24">SEARCH</tspan></text>
+      </g>
+    </g>
+    <g id="Group_215" data-name="Group 215" transform="translate(3063 -1207)">
+      <path id="Path_41" data-name="Path 41" class="cls-6" d="M.5.5h89v39H.5Z" transform="translate(1295 20)"/>
+      <text id="HOME" class="cls-7" transform="translate(1295 24)"><tspan x="17.924" y="24">HOME</tspan></text>
+    </g>
+  </g>
+</svg>

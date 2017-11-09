@@ -109,11 +109,12 @@ ul {
   }
 </style>
 @section('content')
+<!-- change to header.. -->
+<h1>Register</h1>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
@@ -182,11 +183,3 @@ ul {
     </div>
 </div>
 @endsection
-<div class="footer">
-  <ul>
-    <li><a href="{{ url('/home') }}">Home</a></li>
-    <li><a href="{{ url('/about') }}">About</a></li>
-    <li><a href="{{ url('/faq') }}">FAQ</a></li>
-    <li style="float:right"><a class="disabled" href="#copyright">Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.</a></li>
-  </ul>
-</div>

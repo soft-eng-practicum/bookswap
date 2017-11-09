@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3442 -119 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Admin_);
+      }
+
+      .cls-2 {
+        fill: #555;
+        stroke: #333;
+      }
+
+      .cls-3 {
+        fill: #af0;
+        font-size: 24px;
+        font-family: Abel-Regular, Abel;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #333;
+      }
+    </style>
+    <clipPath id="clip-Admin_">
+      <rect x="3442" y="-119" width="1366" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="Admin_" data-name="Admin?" class="cls-1">
+    <rect class="cls-6" x="3442" y="-119" width="1366" height="768"/>
+    <g id="Group_216" data-name="Group 216" transform="translate(3377 -119)">
+      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-2" transform="translate(1071)">
+        <rect class="cls-4" width="90" height="40"/>
+        <rect class="cls-5" x="0.5" y="0.5" width="89" height="39"/>
+      </g>
+      <text id="LOGIN" class="cls-3" transform="translate(1088.733 29)"><tspan x="0" y="0">LOGIN</tspan></text>
+    </g>
+    <g id="Group_217" data-name="Group 217" transform="translate(3470 -119)">
+      <g id="Group_162" data-name="Group 162">
+        <g id="Rectangle_10" data-name="Rectangle 10" class="cls-2" transform="translate(1158)">
+          <rect class="cls-4" width="90" height="40"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="89" height="39"/>
+        </g>
+        <text id="FAQ" class="cls-3" transform="translate(1169.613 4)"><tspan x="15.481" y="24">FAQ</tspan></text>
+      </g>
+    </g>
+    <g id="Group_218" data-name="Group 218" transform="translate(3442 -119)">
+      <g id="Group_163" data-name="Group 163" transform="translate(118 -20)">
+        <path id="Path_37" data-name="Path 37" class="cls-2" d="M.5.5h89v39H.5Z" transform="translate(1158 20)"/>
+        <text id="ABOUT" class="cls-3" transform="translate(1169.613 24)"><tspan x="3.586" y="24">ABOUT</tspan></text>
+      </g>
+    </g>
+    <g id="Group_219" data-name="Group 219" transform="translate(3243 -119)">
+      <g id="Rectangle_13" data-name="Rectangle 13" class="cls-2" transform="translate(1295)">
+        <rect class="cls-4" width="89.715" height="40"/>
+        <rect class="cls-5" x="0.5" y="0.5" width="88.715" height="39"/>
+      </g>
+      <g id="Group_169" data-name="Group 169">
+        <text id="SEARCH" class="cls-3" transform="translate(1295.285 4)"><tspan x="7.692" y="24">SEARCH</tspan></text>
+      </g>
+    </g>
+    <g id="Group_220" data-name="Group 220" transform="translate(3063 -139)">
+      <path id="Path_41" data-name="Path 41" class="cls-2" d="M.5.5h89v39H.5Z" transform="translate(1295 20)"/>
+      <text id="HOME" class="cls-3" transform="translate(1295 24)"><tspan x="17.924" y="24">HOME</tspan></text>
+    </g>
+  </g>
+</svg>

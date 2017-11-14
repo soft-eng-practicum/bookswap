@@ -84,10 +84,10 @@
                         </div>
                         @endif
                         -->
-                        <li><a href="{{ url('/welcome') }}">Home</a></li>
-                        <li><a href="{{ url('/test') }}">Search</a></li>
-                        <li><a href="{{ url('/about') }}">About</a></li>
-                        <li><a href="{{ url('/faq') }}">FAQ</a></li>
+                        <li><a href="{{ url('') }}">Home</a></li>
+                        <li><a href="{{ url('test') }}">Search</a></li>
+                        <li><a href="{{ url('about') }}">About</a></li>
+                        <li><a href="{{ url('faq') }}">FAQ</a></li>
 
                         @if (Auth::guest())
                         <li><a href="{{ route('login') }}">Login</a></li>

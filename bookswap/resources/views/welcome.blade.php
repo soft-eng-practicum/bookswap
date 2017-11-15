@@ -37,7 +37,7 @@
     <style>
     html, body {
         background-color: #333333;
-        color: #CCCCCC;
+        color: #666666;
         font-family: 'Abel', sans-serif;
         width: 95%;
         margin: auto;
@@ -74,6 +74,7 @@
     }
     .links a {
         color: #666666;
+        font-weight: bold;
         padding: 0 20px;
         font-size: 1.2em;
         text-decoration: none;
@@ -100,25 +101,28 @@
         font-family: 'Cinzel Decorative', cursive;
     }
     .form-control {
+        font-weight: bold;
         padding-top: 45px;
         background-color: #333;
         border: 0;
         border-bottom: 3px solid #ccc;
         outline: 0;
         box-shadow: none;
-        font-weight: bold;
     }
     input[type=text] {
         font-size: 1.2em;
         font-weight: bold;
         text-transform: capitalize;
+        padding: 10px 5px 1px 5px;
+        border: 0;
+        border-bottom: 3px solid #666666;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
     }
     textarea:focus, input[type="text"]:focus, .uneditable-input:focus {
-        border: 0;
-        border-bottom: 3px solid #403737;
-        border-radius: 0;
-        outline: 0;
         box-shadow: none;
+        border-bottom: 3px solid #666666;
         transition: all 300ms ease-in-out;
     }
     </style>
@@ -156,7 +160,7 @@
     }
 
     $(function() {
-        $( "#search" ).autocomplete({
+        $('#search').autocomplete({
             source: submitQuery,
             minLength: 2,
             select: function( event, ui ) {
@@ -181,18 +185,18 @@
     <header>
         @if (Route::has('login'))
         <div class="links">
-            <a href="{{ url('/welcome') }}"><span id="currentlink">Home</span></a>
-            <a href="{{ url('/test') }}">Search</a>
-            <a href="{{ url('/about') }}">About</a>
-            <a href="{{ url('/faq') }}">FAQ</a>
+            <a href="{{ url('') }}"><span id="currentlink">Home</span></a>
+            <a href="{{ url('test') }}">Search</a>
+            <a href="{{ url('about') }}">About</a>
+            <a href="{{ url('faq') }}">FAQ</a>
 
             @if (Auth::check())
-            <a href="{{ url('/selling') }}">Sell</a>
-            <a href="{{ url('/profile') }}">{{ Auth::user()->name }}</a>
+            <a href="{{ url('selling') }}">Sell</a>
+            <a href="{{ url('profile') }}">{{ Auth::user()->name }}</a>
 
             @else
-            <a href="{{ url('/login') }}">Login</a>
-            <a href="{{ url('/register') }}">Register</a>
+            <a href="{{ url('login') }}">Login</a>
+            <a href="{{ url('register') }}">Register</a>
             @endif
         </div>
         @endif

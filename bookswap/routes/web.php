@@ -8,6 +8,8 @@
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
+| NOTE - fix issue with 'route' vs 'url' on navbar links. checkout site below for help
+|        https://laravel.io/forum/06-29-2014-how-to-link-to-route-when-route-is-defined-in-a-controller -->
 |
 */
 

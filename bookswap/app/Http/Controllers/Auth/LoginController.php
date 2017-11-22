@@ -22,7 +22,7 @@ class LoginController extends Controller
 
     /**
      * Where to redirect users after login.
-     *
+     * NOTE - should be their profile page. resources\views\profile.blade.php
      * @var string
      */
     protected $redirectTo = '/home';

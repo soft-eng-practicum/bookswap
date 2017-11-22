@@ -12,14 +12,17 @@
 <!-- CSS: Styles (believed to be a copy/paste of all styles for all pages) -->
 <style>
 html, body {
-    background-color: #333333;
-    color: #CCCCCC;
+    background-color: #222222;
+    color: #666666;
     font-family: 'Abel', sans-serif;
     width: 95%;
     margin: auto;
     min-witdh: 800px;
+    /* NOTE: box floats/aligns to top without all of the below...
+    Moved from random classes to main & header, now only position remains
     height: 100vh;
     align-items: center;
+    /* possible reason
     display: flex;
     justify-content: center;
 }
@@ -47,6 +50,7 @@ main {
 }
 .links a {
     color: #666666;
+    font-weight: bold;
     padding: 0 20px;
     font-size: 1.2em;
     text-decoration: none;
@@ -56,104 +60,175 @@ main {
     color: #AAFF00;
     text-decoration: none;
 }
-#currentlink {
-    color: #AAFF00;
-}
-/* LOGO STYLING *\
-#logo-img-home-big {
-    width: 400px;
-}
-#logo-img-small {
-    width: 75px;
-}
-#logo-name-home-big {
-    padding-top: 15px;
-    padding-bottom: 30px;
-    font-size: 6em;
-    color: #77BB00;
-}
-#logo-name span {
-    color: #77BB00;
-}
-#logo-name-swap span {
-    font-weight: 700;
-    font-family: 'Cinzel Decorative', cursive;
-}
-.form-control {
-    padding-top: 45px;
-    background-color: #333;
-    border: 0;
-    border-bottom: 3px solid #ccc;
-    outline: 0;
-    box-shadow: none;
-    font-weight: bold;
-}
-input[type=text] {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-textarea:focus, input[type="text"]:focus, .uneditable-input:focus {
-    border: 0;
-    border-bottom: 3px solid #403737;
-    border-radius: 0;
-    outline: 0;
-    box-shadow: none;
-    transition: all 300ms ease-in-out;
-}
 </style>
+
 */
-*, *::after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*::after, *::before {
-    content: '';
-}
-body {
+/* --------------------------------
+Navbar components
+-------------------------------- */
+html, body {
     font-size: 100%;
     font-family: Abel;
     color: #CCCCCC;
-    background-color: #333333;
+    background-color: #222222 !important;
+    -webkit-tap-highlight-color: transparent;
 }
-body::after {
-    /* overlay layer visible on small devices when the right panel slides in */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(78, 83, 89, 0.8);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-    -moz-transition: opacity .3s 0s, visibility 0s .3s;
-    transition: opacity .3s 0s, visibility 0s .3s;
+nav {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 20px;
 }
-body.cd-overlay::after {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-    -moz-transition: opacity .3s 0s, visibility 0s 0s;
-    transition: opacity .3s 0s, visibility 0s 0s;
-}
-@media only screen and (min-width: 768px) {
-    body::after {
-        display: none;
-    }
-}
-ul li {
-    list-style: none!important;
-}
-a {
-    color: #a9c056;
+nav a {
+    color: #666666;
     text-decoration: none;
+}
+nav li:hover, nav a:hover {
+    color: #AAFF00;
+    text-decoration: none;
+    background-color: #222 !important;
+}
+#currentlink {
+    color: #AAFF00;
+}
+nav .icon-bar {
+    background-color: #666;
+}
+.navbar-brand {
+    color: #77BB00;
+    font-size: 1.2em;
+    padding-left: 0;
+    padding-right: 50px;
+}
+.navbar-brand span {
+    font-weight: 700;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.navbar-toggle, .navbar-right {
+    padding-left: 50px;
+    padding-right: 0px;
+}
+.logo-name {
+    color: #77BB00;
+}
+.logo-name > span {
+    font-weight: 700;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.logo-big {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 /* --------------------------------
 Main components
 -------------------------------- */
+.center {
+    margin: auto;
+}
+.logo-img {
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 4em;
+    color: #EEEEEE;
+}
+footer {
+    font-size: .8em;
+    bottom: 10;
+    left: 10;
+    position: fixed;
+}
+label{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+div {
+    display: block;
+}
+.panel {
+    font-size: 1.25em;
+    line-height: 1.5;
+    background-color: inherit;
+}
+.panel-heading {
+    text-align: center;
+}
+.panel a {
+    color: #77BB00;
+    text-decoration: none;
+}
+.panel a:hover {
+    color: #AAFF00;
+    text-decoration: none;
+}
+.btn {
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
+    background-color: #77BB00;
+    border: 0;
+    margin-right: 25px;
+}
+.btn-alt {
+    background-color: #666;
+}
+.btn:hover{
+    background-color: #AAFF00;
+}
+.form-group, .form-control {
+    margin-bottom: 15px;
+    font-size: inherit;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 3px solid #666;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+}
+input[type=text], input[type="email"], input[type="password"] {
+    color: #cccccc;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    padding: 10px 5px 0px 5px;
+    border: 0;
+    border-bottom: 3px solid #666;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+textarea:focus,
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus,
+.uneditable-input:focus {
+    box-shadow: none;
+    border-bottom: 3px solid #ccc;
+    transition: all 300ms ease-in-out;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type="checkbox"] {
+    margin-top: .4em;
+    transform:scale(1.3, 1.3);
+}
+/*
 header {
     position: relative;
     height: 180px;
@@ -169,19 +244,6 @@ header h1 {
     font-size: 20px!important;
     font-size: 1.25rem;
     padding-top: 100px!important;
-}
-footer {
-    font-size: .8em;
-    bottom: 10;
-    left: 10;
-    position: fixed;
-}
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 100px;
-    font-size: 6em;
-    color: #EEEEEE;
 }
 @media only screen and (min-width: 1024px) {
     header {
@@ -229,7 +291,6 @@ h1 {
     text-overflow: ellipsis;
 }
 .categories a::before, .categories a::after {
-    /* plus icon on the right */
     position: absolute;
     top: 50%;
     right: 16px;
@@ -284,7 +345,6 @@ h1 {
         z-index: 2;
     }
     .categories a::before {
-        /* decorative rectangle on the left visible for the selected item */
         display: block;
         top: 0;
         right: auto;
@@ -304,7 +364,6 @@ h1 {
         opacity: 1;
     }
     .categories.is-fixed {
-        /* top and left value assigned in jQuery */
         position: fixed;
     }
     .no-js .categories {
@@ -387,7 +446,6 @@ h1 {
     text-indent: 100%;
     white-space: nowrap;
     z-index: 2;
-    /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -400,7 +458,6 @@ h1 {
     transition: right 0.4s;
 }
 .cd-close-panel::before, .cd-close-panel::after {
-    /* close icon in CSS */
     position: absolute;
     top: 16px;
     left: 12px;
@@ -432,7 +489,6 @@ h1 {
     }
 }
 .faq-group {
-    /* hide group not selected */
     display: none;
 }
 .faq-group.selected {
@@ -458,7 +514,6 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
     .faq-group {
-        /* all groups visible */
         display: block;
     }
     .faq-group > li {
@@ -494,7 +549,6 @@ h1 {
         padding: 24px 72px 24px 24px;
     }
     .trigger::before, .trigger::after {
-        /* arrow icon on the right */
         position: absolute;
         right: 24px;
         top: 50%;

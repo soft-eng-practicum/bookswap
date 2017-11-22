@@ -189,7 +189,7 @@ div {
 .btn:hover{
     background-color: #AAFF00;
 }
-.form-group, .form-control {
+.form-control {
     margin-bottom: 15px;
     font-size: inherit;
     background-color: inherit;

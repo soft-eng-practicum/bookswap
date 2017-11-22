@@ -4,7 +4,6 @@ NOTE: this consists of the repetitive html & import information -->
 <title>BookSwap | Login</title>
 
 @section('content')
-<!-- change to header.. -->
 <div class="container">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">

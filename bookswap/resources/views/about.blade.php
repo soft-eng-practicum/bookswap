@@ -9,14 +9,14 @@ NOTE: this consists of the repetitive html & import information -->
         <div class="panel-heading"><h1>About</h1></div>
         <div class="panel-body">
             <!-- About Section -->
-            <div class="col-md-12" id="about">
+            <div class="col-sm-12" id="about">
                 <p class="about-bookswap">
                     A web app targeted for GGC students to buy and sell books with other GGC students.<br>
                     We believe that this is a great idea since it facilitates the way people exchange books,
                     and it'll create a closer community and bring students together, compared to something like Facebook.
                 </p>
             </div>
-            <div class="col-md-12 bgimg-openbook bgimg-openbook-gray-dark">
+            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-dark">
                 <div class="about-left half">
                     <div class="about-left pic">
                         <img class="myPic" src="h.jpg" alt="Hailey">
@@ -42,7 +42,7 @@ NOTE: this consists of the repetitive html & import information -->
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 bgimg-openbook bgimg-openbook-gray-light">
+            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
                 <div class="about-left half">
                     <div class="about-left pic">
                         <img class="myPic" src="a.jpg" alt="Adam">

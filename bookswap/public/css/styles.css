@@ -185,6 +185,7 @@ input[type="checkbox"] {
 FAQ stuff...
 --------------------*/
 .bgimg-talkbox {
+    font-size: inherit;
     padding-top: 40px;
     padding-bottom: 5px;
 }
@@ -196,8 +197,10 @@ FAQ stuff...
     background: url('/../img/TalkboxGray@x1.png') no-repeat;
 }
 .bgimg-openbook {
+    font-size: inherit;
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    clear: both;
 }
 .bgimg-openbook-green-dark {
     background: url('/../img/OpenbookGreenDark@x1.png') no-repeat;
@@ -214,6 +217,43 @@ FAQ stuff...
 .bgimg-openbook-gray-light {
     background: url('/../img/OpenbookGrayLight@x1.png') no-repeat;
     background-size: 100% 100%;
+}
+/*--------------------
+About stuff...
+--------------------*/
+.about-bookswap {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.about-left {
+    float: left;
+    padding: 5px;
+}
+.about-right {
+    float: right;
+    padding: 5px;
+}
+.half {
+	width: 50%;
+}
+.pic {
+    width: 30%;
+}
+.content {
+    width: 70%;
+}
+.myPic {
+    width: 150px;
+}
+.myPic.img {
+    max-width: 100%
+    height: auto;
+    padding: 4px;
+    border: 4px solid #AAFF00;
+    border-radius: 4px;
+}
+.myPic:hover{
+    filter: brightness(1.1);
 }
 /*
 @media only screen and (min-width: 1024px) {

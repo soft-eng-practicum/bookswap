@@ -6,6 +6,7 @@
     <!-- verify viewing device's width for proper display -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TOKEN: used in Laravel script below for site security -->
+    <!-- NOTE - this was not included in the welcome page, just the script below -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- IMPORT: Stylesheets -->
@@ -32,12 +33,10 @@
         // If browser resized, check width again
         if ($(window).width() < 768){
             $('#main-nav').addClass('nav-stacked');
-            $('#main-logo').removeClass('logo-img-big')
             console.log($(window).width());
         } else if ($(window).width() > 768){
             if (!init) {
                 $('#main-nav').removeClass('nav-stacked');
-                $('#main-logo').addClass('logo-img-big')
                 console.log($(window).width());
             }
         }
@@ -165,13 +164,14 @@
 
         <!-- PAGE: PICK UP... (FROM ACTUAL PAGE FILES) ends prespective pages... -->
         @yield('content')
-    </div>
 
 
     <!-- PAGE SECTION: Footer -->
     <footer class="container">
         Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
     </footer>
+</div>
+
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>

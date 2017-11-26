@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- HTML LANG: local configuration (to the device).
+    NOTE - Usd in FAQ page... moved here for uniformity purposes
+    <html lang="{{ config('app.locale') }}">   -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -170,7 +173,7 @@
     <footer class="container">
         Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
     </footer>
-</div>
+    </div>
 
 
     <!-- Scripts -->

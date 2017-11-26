@@ -16,13 +16,15 @@ NOTE: this consists of the repetitive html & import information -->
                     and it'll create a closer community and bring students together, compared to something like Facebook.
                 </p>
             </div>
+
+            <!-- GROUP 1: SoftDev II 2017 Fall -->
             <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-dark">
                 <div class="about-left half">
                     <div class="about-left pic">
-                        <img class="myPic" src="h.jpg" alt="Hailey">
+                        <img class="myPic" src="img/authors/hailey.jpg" alt="Hailey">
                     </div>
                     <div class="about-left content">
-                        <h3>Hailey</h3>
+                        <h4>Hailey</h4>
                         <p>
                             Project Manager &amp; Back-End Developer<br>
                             <small><a href="mailto:hmontgomery@ggc.edu">hmontgomery@ggc.edu</a></small>
@@ -31,10 +33,10 @@ NOTE: this consists of the repetitive html & import information -->
                 </div>
                 <div class="about-right half">
                     <div class="about-right pic">
-                        <img class="myPic" src="w.jpg" alt="Winston">
+                        <img class="myPic" src="img/authors/winston.jpg" alt="Winston">
                     </div>
                     <div class="about-right content">
-                        <h3>Winston</h3>
+                        <h4>Winston</h4>
                         <p>
                             Lead Front-End Developer<br>
                             <small><a href="mailto:hmontgomery@ggc.edu">hmontgomery@ggc.edu</a></small>
@@ -45,10 +47,10 @@ NOTE: this consists of the repetitive html & import information -->
             <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
                 <div class="about-left half">
                     <div class="about-left pic">
-                        <img class="myPic" src="a.jpg" alt="Adam">
+                        <img class="myPic" src="img/authors/alex.jpg" alt="Adam">
                     </div>
                     <div class="about-left content">
-                        <h3>Adam</h3>
+                        <h4>Adam</h4>
                         <p>
                             Lead Back-End Developer<br>
                             <small><a href="mailto:aprintz@ggc.edu">aprintz@ggc.edu</a></small>
@@ -57,13 +59,67 @@ NOTE: this consists of the repetitive html & import information -->
                 </div>
                 <div class="about-right half">
                     <div class="about-right pic">
-                        <img class="myPic" src="x.jpg" alt="Xavier">
+                        <img class="myPic" src="img/authors/xavier.jpg" alt="Xavier">
                     </div>
                     <div class="about-left content">
-                        <h3>Xavier</h3>
+                        <h4>Xavier</h4>
                         <p>
                             Graphic Designer &amp; Front-End Developer<br>
                             <small><a href="mailto:xlazo@ggc.edu">xlazo@ggc.edu</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GROUP 1: SoftDev II 2017 Fall -->
+            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
+                <div class="about-left half">
+                    <div class="about-left pic">
+                        <img class="myPic" src="img/authors/alek.png" alt="Alek">
+                    </div>
+                    <div class="about-left content">
+                        <h4>Alek</h4>
+                        <p>
+                            Back-End Developer<br>
+                            <small><a href="mailto:agartlan@ggc.edu">aprintz@ggc.edu</a></small>
+                        </p>
+                    </div>
+                </div>
+                <div class="about-right half">
+                    <div class="about-right pic">
+                        <img class="myPic" src="img/authors/chelsea.png" alt="Chelsea">
+                    </div>
+                    <div class="about-left content">
+                        <h4>Chelsea</h4>
+                        <p>
+                            Graphic Designer &amp; Lead Front-End Developer<br>
+                            <small><a href="mailto:cdalessandro@ggc.edu">xlazo@ggc.edu</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
+                <div class="about-left half">
+                    <div class="about-left pic">
+                        <img class="myPic" src="img/authors/sierra.png" alt="Sierra">
+                    </div>
+                    <div class="about-left content">
+                        <h4>Sierra</h4>
+                        <p>
+                            Front-End Developer<br>
+                            <small><a href="mailto:swilliams37@ggc.edu">aprintz@ggc.edu</a></small>
+                        </p>
+                    </div>
+                </div>
+                <div class="about-right half">
+                    <div class="about-right pic">
+                        <img class="myPic" src="img/authors/waylon.png" alt="Waylon">
+                    </div>
+                    <div class="about-left content">
+                        <h4>Waylon</h4>
+                        <p>
+                            Lead Back-End Developer<br>
+                            <small><a href="mailto:wlao@ggc.edu">xlazo@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>

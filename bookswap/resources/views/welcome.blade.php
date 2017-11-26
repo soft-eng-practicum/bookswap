@@ -5,9 +5,7 @@ NOTE: this consists of the repetitive html & import information -->
 
 @section('content')
 <div class="container">
-    <div class="col-sm-8 col-sm-offset-2">
-        <img class="logo-img" src="{{URL::asset('img/logo.png')}}" alt="BookSwap logo. A green book."/>
-    </div>
+    <img class="logo-img" src="{{URL::asset('img/logo.png')}}" alt="BookSwap logo. A green book."/>
 
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">

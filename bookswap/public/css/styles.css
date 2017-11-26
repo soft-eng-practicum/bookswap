@@ -71,21 +71,29 @@ Main components
     margin: auto;
 }
 .logo-img {
+    display: block;
     width: 50%;
     min-width: 200px;
     max-width: 400px;
+    margin: auto;
 }
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 100px;
     color: #EEEEEE;
 }
 h1 {
+    margin-top: 50px;
     font-size: 4em;
 }
 h2 {
     font-size: 3em;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 1.75em;
 }
 footer {
     font-size: .8em;
@@ -181,13 +189,8 @@ input[type="checkbox"] {
     margin-top: .4em;
     transform:scale(1.3, 1.3);
 }
-/*--------------------
-FAQ stuff...
---------------------*/
 .bgimg-talkbox {
-    font-size: inherit;
-    padding-top: 40px;
-    padding-bottom: 5px;
+    padding: 30px 20px 20px 20px;
 }
 .bgimg-talkbox-green {
     background: url('/../img/TalkboxGreen@x1.png') no-repeat;
@@ -195,11 +198,11 @@ FAQ stuff...
 }
 .bgimg-talkbox-gray {
     background: url('/../img/TalkboxGray@x1.png') no-repeat;
+    background-size: 100% 100%;
 }
 .bgimg-openbook {
     font-size: inherit;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding: 2px 10px 10px 10px;
     clear: both;
 }
 .bgimg-openbook-green-dark {
@@ -218,6 +221,7 @@ FAQ stuff...
     background: url('/../img/OpenbookGrayLight@x1.png') no-repeat;
     background-size: 100% 100%;
 }
+
 /*--------------------
 About stuff...
 --------------------*/
@@ -237,43 +241,48 @@ About stuff...
 	width: 50%;
 }
 .pic {
-    width: 30%;
+    width: 40%;
+    padding: 1%;
+    padding-bottom: 5%;
 }
 .content {
-    width: 70%;
+    color: #fff;
+    width: 60%;
 }
 .myPic {
     width: 100%;
     margin: auto;
     min-width: 50px;
 }
-.myPic.img {
+.pic img {
     max-width: 100%;
     height: auto;
     padding: 4px;
-    border: 4px solid #AAFF00;
+    border: 4px solid #77BB00;
     border-radius: 4px;
 }
 .myPic:hover{
     filter: brightness(1.1);
+    border: 4px solid #AAFF00;
+
 }
-/*
-@media only screen and (min-width: 1024px) {
-    header {
-        height: 240px;
-        line-height: 240px;
-    }
-    header h1 {
-        padding-top: 100px!important;
-        font-size: 36px!important;
-        font-size: 2.25rem;
-        font-weight: 300;
-    }
+
+/*--------------------
+FAQ stuff...
+--------------------*/
+section ul li {
+    list-style: none!important;
+}
+section a {
+    text-decoration: none!important;
+}
+section a:hover {
+    text-decoration: none!important;
 }
 .faq {
-    width: 90%;
+    width: 95%;
     max-width: 1024px;
-    margin: 2em auto;
+    margin: auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 .faq:after {
@@ -281,27 +290,44 @@ About stuff...
     display: table;
     clear: both;
 }
-@media only screen and (min-width: 768px) {
-    .faq {
-        position: relative;
-        margin: 4em auto;
-        box-shadow: none;
-    }
+.categories {
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+.categories .selected {
+    background: #666 !important;
+}
+.categories .selected::before {
+    opacity: 1;
 }
 .categories a {
     position: relative;
     display: block;
     overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 28px 0 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #ffffff;
+    color: #fff;
+    font-size: 1.25em!important;
+    text-transform: uppercase;
     white-space: nowrap;
-    border-bottom: 1px solid #555b61;
     text-overflow: ellipsis;
 }
+.categories a:hover {
+    color: #AAFF00;
+    background-color: #666;
+    -webkit-transition: background 0.2s, padding 0.2s;
+    -moz-transition: background 0.2s, padding 0.2s;
+    transition: background 0.2s, padding 0.2s;
+}
+
+
 .categories a::before, .categories a::after {
     position: absolute;
     top: 50%;
@@ -318,77 +344,50 @@ About stuff...
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+
 .categories li:last-child a {
     border-bottom: none;
 }
-@media only screen and (min-width: 768px) {
-    .categories {
-        width: 20%;
-        float: left;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-    }
-    .categories a {
-        font-size: 13px!important;
-        font-size: 0.8125rem;
-        font-weight: 600;
-        padding-left: 24px;
-        padding: 0 24px;
-        -webkit-transition: background 0.2s, padding 0.2s;
-        -moz-transition: background 0.2s, padding 0.2s;
-        transition: background 0.2s, padding 0.2s;
-    }
-    .categories a::before, .categories a::after {
-        display: none;
-    }
-    .no-touch .categories a:hover {
-        background: #555b61;
-    }
-    .no-js .categories {
-        width: 100%;
-        margin-bottom: 2em;
-    }
+.faq-group {
+    display: none;
+    padding-left: 0px;
 }
-@media only screen and (min-width: 1024px) {
-    .categories {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200px;
-        z-index: 2;
-    }
-    .categories a::before {
-        display: block;
-        top: 0;
-        right: auto;
-        left: 0;
-        height: 100%;
-        width: 3px;
-        background-color: #a9c056;
-        opacity: 0;
-        -webkit-transition: opacity 0.2s;
-        -moz-transition: opacity 0.2s;
-        transition: opacity 0.2s;
-    }
-    .categories .selected {
-        background: #42464b !important;
-    }
-    .categories .selected::before {
-        opacity: 1;
-    }
-    .categories.is-fixed {
-        position: fixed;
-    }
-    .no-js .categories {
-        position: relative;
-    }
+.faq-group.selected {
+    display: block;
+    background-color: #222;
+}
+.faq-group a {
+    color: #fff;
+    font-weight: bold;
+}
+.faq-group a:hover {
+    color: #AAFF00;
+}
+.faq-group .faq-title {
+    background: transparent;
+    box-shadow: none;
+}
+.no-touch .faq-group .faq-title:hover {
+    box-shadow: none;
+}
+.no-js .faq-group {
+    display: block;
+}
+.faq-content {
+    display: none;
+    padding: 0 24px 30px;
+}
+.faq-content p {
+    line-height: 1.6;
+    font-size: 1.25em;
+    color: #eee;
 }
 .faq-items {
-    position: fixed;
-    height: 100%;
-    width: 90%;
-    top: 0;
-    right: 0;
-    background: #ffffff;
+    display: block;
+    position: static;
+    top: -25px;
+    right: 15px;
     padding: 0 5% 1em;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -405,6 +404,7 @@ About stuff...
     transition: transform .3s;
 }
 .faq-items.slide-in {
+    padding: 0;
     -webkit-transform: translateZ(0) translateX(0%);
     -moz-transform: translateZ(0) translateX(0%);
     -ms-transform: translateZ(0) translateX(0%);
@@ -413,39 +413,12 @@ About stuff...
 }
 .no-js .faq-items {
     position: static;
-    height: auto;
     width: 100%;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
-}
-@media only screen and (min-width: 768px) {
-    .faq-items {
-        position: static;
-        height: auto;
-        width: 78%;
-        float: right;
-        overflow: visible;
-        -webkit-transform: translateZ(0) translateX(0);
-        -moz-transform: translateZ(0) translateX(0);
-        -ms-transform: translateZ(0) translateX(0);
-        -o-transform: translateZ(0) translateX(0);
-        transform: translateZ(0) translateX(0);
-        padding: 0;
-        background: transparent;
-    }
-}
-@media only screen and (min-width: 1024px) {
-    .faq-items {
-        float: none;
-        width: 100%;
-        padding-left: 220px;
-    }
-    .no-js .faq-items {
-        padding-left: 0;
-    }
 }
 .cd-close-panel {
     position: fixed;
@@ -495,49 +468,91 @@ About stuff...
 .cd-close-panel.move-left {
     right: 2%;
 }
-@media only screen and (min-width: 768px) {
+.trigger {
+    position: relative;
+    display: block;
+    margin: 1.6em 0 .4em;
+}
+.content-visible .trigger::before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.content-visible .trigger::after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+@media only screen and (min-width: 1024px) {
+    .categories a::before {
+        display: block;
+        top: 0;
+        right: auto;
+        left: 0;
+        height: 100%;
+        width: 30px;
+        background-color: #77BB00;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+    }
+    .no-js .categories {
+        position: relative;
+    }
+    .no-js .faq-items {
+        padding-left: 0;
+    }
     .cd-close-panel {
         display: none;
     }
 }
-.faq-group {
-    display: none;
-}
-.faq-group.selected {
-    display: block;
-}
-.faq-group .faq-title {
-    background: transparent;
-    box-shadow: none;
-    margin: 1em 0;
-}
-.no-touch .faq-group .faq-title:hover {
-    box-shadow: none;
-}
-.faq-group .faq-title h2 {
-    text-transform: uppercase;
-    font-size: 12px!important;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #bbbbc7;
-}
-.no-js .faq-group {
-    display: block;
-}
 @media only screen and (min-width: 768px) {
+    .faq {
+        position: relative;
+        margin: auto;
+        box-shadow: none;
+    }
+    .categories {
+        z-index: 2;
+        width: 20%;
+        float: left;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    }
+    .categories.is-fixed {
+        position: fixed;
+    }
+    .no-js .categories {
+        position: relative;
+    }
+    .categories a::after {
+        display: none;
+    }
+    .categories a::before {
+        display: block;
+        top: 0;
+        right: auto;
+        left: 0;
+        height: 100%;
+        width: 10px;
+        background-color: blue;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+    }
+    .categories .selected {
+        background: #666 !important;
+    }
+    .categories .selected::before {
+        opacity: 1;
+    }
     .faq-group {
         display: block;
-    }
-    .faq-group > li {
-        background: #ffffff;
-        margin-bottom: 6px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-        -webkit-transition: box-shadow 0.2s;
-        -moz-transition: box-shadow 0.2s;
-        transition: box-shadow 0.2s;
-    }
-    .no-touch .faq-group > li:hover {
-        box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
     }
     .faq-group .faq-title {
         margin: 2em 0 1em;
@@ -545,20 +560,29 @@ About stuff...
     .faq-group:first-child .faq-title {
         margin-top: 0;
     }
-}
-.trigger {
-    position: relative;
-    display: block;
-    margin: 1.6em 0 .4em;
-    line-height: 1.2;
-}
-@media only screen and (min-width: 768px) {
+    .faq-items {
+        position: static;
+        height: auto;
+        width: 75%;
+        float: right;
+        overflow: visible;
+        -webkit-transform: translateZ(0) translateX(0);
+        -moz-transform: translateZ(0) translateX(0);
+        -ms-transform: translateZ(0) translateX(0);
+        -o-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+        padding: 0;
+        background: transparent;
+    }
+    .no-js .faq-items {
+        padding-left: 0;
+    }
+    .no-js .faq-content {
+        display: block;
+    }
     .trigger {
-        font-size: 24px!important;
-        font-size: 1.5rem;
-        font-weight: 300;
         margin: 0;
-        padding: 24px 72px 24px 24px;
+        padding: 10px;
     }
     .trigger::before, .trigger::after {
         position: absolute;
@@ -566,7 +590,7 @@ About stuff...
         top: 50%;
         height: 2px;
         width: 13px;
-        background: #cfdca0;
+        background: #ccc;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-transition-property: -webkit-transform;
@@ -591,36 +615,7 @@ About stuff...
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
-    .content-visible .trigger::before {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-    .content-visible .trigger::after {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-}
-.faq-content p {
-    font-size: 14px!important;
-    font-size: 0.875rem;
-    line-height: 1.4;
-    color: #6c7d8e;
-}
-@media only screen and (min-width: 768px) {
-    .faq-content {
-        display: none;
-        padding: 0 24px 30px;
-    }
-    .faq-content p {
-        line-height: 1.6;
-    }
-    .no-js .faq-content {
-        display: block;
+    .no-touch .categories a:hover {
+        background: #555b61;
     }
 }

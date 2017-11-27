@@ -39,7 +39,7 @@ NOTE: this consists of the repetitive html & import information -->
                         <h4>Winston</h4>
                         <p>
                             Lead Front-End Developer<br>
-                            <small><a href="mailto:hmontgomery@ggc.edu">hmontgomery@ggc.edu</a></small>
+                            <small><a href="mailto:akone1@ggc.edu">akone1@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ NOTE: this consists of the repetitive html & import information -->
             </div>
 
             <!-- GROUP 1: SoftDev II 2017 Fall -->
-            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
+            <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-dark">
                 <div class="about-left half">
                     <div class="about-left pic">
                         <img class="myPic" src="img/authors/alek.png" alt="Alek">
@@ -81,7 +81,7 @@ NOTE: this consists of the repetitive html & import information -->
                         <h4>Alek</h4>
                         <p>
                             Back-End Developer<br>
-                            <small><a href="mailto:agartlan@ggc.edu">aprintz@ggc.edu</a></small>
+                            <small><a href="mailto:agartlan@ggc.edu">agartlan@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ NOTE: this consists of the repetitive html & import information -->
                         <h4>Chelsea</h4>
                         <p>
                             Graphic Designer &amp; Lead Front-End Developer<br>
-                            <small><a href="mailto:cdalessandro@ggc.edu">xlazo@ggc.edu</a></small>
+                            <small><a href="mailto:cdalessandro@ggc.edu">cdalessandro@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ NOTE: this consists of the repetitive html & import information -->
                         <h4>Sierra</h4>
                         <p>
                             Front-End Developer<br>
-                            <small><a href="mailto:swilliams37@ggc.edu">aprintz@ggc.edu</a></small>
+                            <small><a href="mailto:swilliams37@ggc.edu">swilliams37@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ NOTE: this consists of the repetitive html & import information -->
                         <h4>Waylon</h4>
                         <p>
                             Lead Back-End Developer<br>
-                            <small><a href="mailto:wlao@ggc.edu">xlazo@ggc.edu</a></small>
+                            <small><a href="mailto:wlao@ggc.edu">wlao@ggc.edu</a></small>
                         </p>
                     </div>
                 </div>

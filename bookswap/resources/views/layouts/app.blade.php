@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HTML LANG: local configuration (to the device).
-    NOTE - Usd in FAQ page... moved here for uniformity purposes
-    <html lang="{{ config('app.locale') }}">   -->
+NOTE - Usd in FAQ page... moved here for uniformity purposes
+<html lang="{{ config('app.locale') }}">   -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -127,8 +127,8 @@
                 <div class="navbar-collapse collapse" id="navbarCollapse" aria-expanded="false">
                     <!-- Right Side Of Navbar -->
                     <!-- NOTE - id #main-nav used for toggling the stacked navbar look on small device views. Used in script above
-                                GO TO ..\routes\web.php. fix issue with 'route' vs 'url' checkout site below for help
-                                https://laravel.io/forum/06-29-2014-how-to-link-to-route-when-route-is-defined-in-a-controller -->
+                    GO TO ..\routes\web.php. fix issue with 'route' vs 'url' checkout site below for help
+                    https://laravel.io/forum/06-29-2014-how-to-link-to-route-when-route-is-defined-in-a-controller -->
                     <ul class="nav navbar-nav navbar-right" id="main-nav">
                         <li><a href="{{ url('test') }}">Search</a></li>
                         <li><a href="{{ url('about') }}">About</a></li>
@@ -169,10 +169,10 @@
         @yield('content')
 
 
-    <!-- PAGE SECTION: Footer -->
-    <footer class="container">
-        Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
-    </footer>
+        <!-- PAGE SECTION: Footer -->
+        <footer>
+            Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
+        </footer>
     </div>
 
 

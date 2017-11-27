@@ -2,6 +2,10 @@ branch-defaults:
   default:
     environment: bookswap-dev
     group_suffix: null
+environment-defaults:
+  bookswap-dev:
+    branch: null
+    repository: null
 global:
   application_name: bookswap
   branch: null

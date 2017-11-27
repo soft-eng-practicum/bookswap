@@ -1,18 +1,15 @@
 # Bookswap: Team Mercury (Fall 2017)
 
 ## Roles:
-1. Code architect / Programmer: Chelsea D'Alessandro(lead), Waylon Lao, Sierra Williams, Alek Gartland
-2. UI/UX designer: Chelsea D'Alessandro
-3. Data modeler: Waylon Lao, Alek Gartland
+1. Code architect / Programmer: Chelsea D'Alessandro, Waylon Lao, Sierra Williams, Alek Gartland
+2. UI/UX designer: Alek Gartland
+3. Data modeler: Waylon Lao
 4. Team manager / client liaison: Chelsea D'Alessandro
 5. Documentation lead: Sierra Williams
-6. Testing: Sierra Williams(lead), Chelsea D'Alessandro, Alek Gartland, Waylon Lao
+6. Testing: Sierra Williams, Chelsea D'Alessandro, Alek Gartland, Waylon Lao
 
 ## Bookswap URL:
-* [Bookswap](bookswap-dev.us-east-1.elasticbeanstalk.com)
-
-## BookSwap Demo Video (screencast):
-* [Bookswap Demo Video](https://youtu.be/OSNYOYd8ozk)
+* [Bookswap Homepage](https://tinyurl.com/ycz25tv6)
 
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)
@@ -26,10 +23,10 @@
 ## Links
 * https://docs.google.com/document/d/1U2ODsEr3x4kmcTHiSajM4G54Clvliu1H0CFBkVO4snY/edit -Helpful links in general
 
-## Install PHP/Laravel/MySql
-1. Install Xampp. This will also install PHP and MySql for your
-2. Get Composer (https://getcomposer.org/download/). To check if it's been installed, open Terminal or Command Line and type in: composer. Hit enter and if a list of commands pop up then you're good to go.
-3. With Composer installed, install Laravel with by typing: composer global require "laravel/installer" into the Command Line/Terminal. To check if it's installed, run: laravel -v. If the Laravel version pops up, you're all set.
+## Initial Setup
+1. Install latest version of php. To check if it's been installed, open Terminal or Command Line and use the command php -v. If a version number pops up, then you're good to go. Installing Xampp can ensure this (https://www.apachefriends.org/index.html).
+2. Install latest version of Composer (https://getcomposer.org/download/). To check if it's been installed, open Terminal or Command Line and use the command composer. If a list of commands pop up, then you're good to go.
+3. With Composer installed, install Laravel by typing: composer global require "laravel/installer" into the Command Line/Terminal. To check if it's installed, run: laravel -v. If the Laravel version pops up, you're all set.
 4. Go to the bookswap folder from Command Line/Terminal and run: laravel update.
 
 ## Connect Elastic Beanstalk with the RDS database

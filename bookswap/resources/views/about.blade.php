@@ -35,7 +35,7 @@ NOTE: this consists of the repetitive html & import information -->
                     <div class="about-right pic">
                         <img class="myPic" src="img/authors/winston.jpg" alt="Winston">
                     </div>
-                    <div class="about-right content">
+                    <div class="about-left content">
                         <h4>Winston</h4>
                         <p>
                             Lead Front-End Developer<br>
@@ -75,7 +75,7 @@ NOTE: this consists of the repetitive html & import information -->
             <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-dark">
                 <div class="about-left half">
                     <div class="about-left pic">
-                        <img class="myPic" src="img/authors/alek.png" alt="Alek">
+                        <img class="myPic" src="img/authors/alek.jpg" alt="Alek">
                     </div>
                     <div class="about-left content">
                         <h4>Alek</h4>
@@ -101,7 +101,7 @@ NOTE: this consists of the repetitive html & import information -->
             <div class="col-sm-12 bgimg-openbook bgimg-openbook-gray-light">
                 <div class="about-left half">
                     <div class="about-left pic">
-                        <img class="myPic" src="img/authors/sierra.png" alt="Sierra">
+                        <img class="myPic" src="img/authors/sierra.jpg" alt="Sierra">
                     </div>
                     <div class="about-left content">
                         <h4>Sierra</h4>

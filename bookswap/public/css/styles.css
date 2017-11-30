@@ -8,6 +8,10 @@
 /* --------------------------------
 Navbar components
 -------------------------------- */
+html {
+    position: relative;
+    min-height: 100%
+}
 html, body {
     font-size: 100%;
     font-family: Abel;
@@ -15,13 +19,8 @@ html, body {
     background-color: #222222 !important;
     -webkit-tap-highlight-color: transparent;
 }
-.site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-.app {
-    flex: 1;
+body {
+    margin-bottom: 30px;
 }
 nav {
     font-size: 1.5em;
@@ -75,6 +74,16 @@ nav .icon-bar {
 /* --------------------------------
 Main components
 -------------------------------- */
+footer {
+    font-size: .75em;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Set the fixed height of the footer here */
+    line-height: 30px; /* Vertically center the text there */
+}
 .center {
     margin: auto;
 }
@@ -103,18 +112,10 @@ h3 {
 h4 {
     font-size: 1.75em;
 }
-footer {
-    font-size: .75em;
-    width: 100%;
-    padding: 1rem;
-}
 label{
     text-align: center;
     margin: 0 auto;
     padding: 0 30px;
-}
-.label-class {
-    margin: 10px 0 0 0;
 }
 div {
     display: block;
@@ -146,11 +147,12 @@ div {
 .btn-alt {
     background-color: #666;
 }
+.btn:hover {
+    color: #222;
+    background-color: #AAFF00;
+}
 .btn-center {
     text-align: center;
-}
-.btn:hover{
-    background-color: #AAFF00;
 }
 .form-control {
     margin-bottom: 15px;
@@ -172,6 +174,9 @@ input[type=text], input[type="email"], input[type="password"], input[type="numbe
     border-radius: 0;
     outline: none;
     box-shadow: none;
+}
+input[type="email"] {
+    text-transform: lowercase;
 }
 textarea:focus,
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus,
@@ -228,6 +233,9 @@ input[type="checkbox"] {
     background: url('/../img/OpenbookGrayLight@x1.png') no-repeat;
     background-size: 100% 100%;
 }
+.icon-blankbook {
+    width: 100px;
+}
 
 /*--------------------
 About stuff...
@@ -239,10 +247,12 @@ About stuff...
 .about-left {
     float: left;
     padding: 5px;
+    padding-right: 7%;
 }
 .about-right {
     float: right;
     padding: 5px;
+    padding-left: 7%;
 }
 .half {
 	width: 50%;

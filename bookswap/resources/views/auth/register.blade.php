@@ -55,9 +55,7 @@ NOTE: this consists of the repetitive html & import information -->
                         </div>
                         <div class="form-group">
                             <div class="col-sm-6 col-sm-offset-4">
-                                <button type="submit" class="btn">
-                                    Register
-                                </button>
+                                <button type="submit" class="btn">Register</button>
                             </div>
                         </div>
                     </form>

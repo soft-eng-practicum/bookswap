@@ -47,7 +47,18 @@ jQuery(document).ready(function($){
 
     faqTrigger.on('click', function(event){
         event.preventDefault();
+        var pListItem = $(this).parent('li');
         $(this).next('.faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
+        /*
+        Switches/Toggles faq-items from grey to green openbooks
+        if ( pList.hasClass('bgimg-openbook-gray-light') || pList.hasClass('bgimg-openbook-green-light') ) {
+            pList.toggleClass('bgimg-openbook-gray-light bgimg-openbook-green-light');
+
+        }
+        else
+            pList.toggleClass('bgimg-openbook-gray-dark bgimg-openbook-green-dark');
+        */
+
     });
 
     $(window).on('scroll', function(){

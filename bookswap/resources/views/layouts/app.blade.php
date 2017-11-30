@@ -13,6 +13,7 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- IMPORT: Stylesheets -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <!-- IMPORT: Fonts -->
@@ -170,8 +171,10 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
 
 
         <!-- PAGE SECTION: Footer -->
-        <footer>
-            Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
+        <footer class="footer">
+            <div class="container">
+                Copyright &copy; 2017 <strong>BookSwap</strong>. All Rights Reserved.
+            </div>
         </footer>
     </div>
 

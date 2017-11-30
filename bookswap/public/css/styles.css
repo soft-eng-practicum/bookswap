@@ -112,6 +112,9 @@ h3 {
 h4 {
     font-size: 1.75em;
 }
+th {
+    text-transform: uppercase;
+}
 label{
     text-align: center;
     margin: 0 auto;

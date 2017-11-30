@@ -55,7 +55,7 @@ function clearFunction() {
 </script>
 
 <div class="container">
-    <div class="rom">
+    <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
 
             <div class="panel">

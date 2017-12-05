@@ -16,7 +16,7 @@ NOTE: this consists of the repetitive html & import information -->
                     <div class="logo-name logo-big">BOOK<span>SWAP</span></div>
                 </div>
                 <div class="panel-body">
-                    <div class="col-sm-10 col-sm-offset-1">
+                    <div class="col-sm-10 col-sm-offset-1 title">
                         <input type="text" class="form-control" id="search" name="search" placeholder="Search book...">
                     </div>
                 </div>

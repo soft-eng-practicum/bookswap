@@ -131,7 +131,7 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
                     GO TO ..\routes\web.php. fix issue with 'route' vs 'url' checkout site below for help
                     https://laravel.io/forum/06-29-2014-how-to-link-to-route-when-route-is-defined-in-a-controller -->
                     <ul class="nav navbar-nav navbar-right" id="main-nav">
-                        <li><a href="{{ url('test') }}">Search</a></li>
+                        <li><a href="{{ url('test') }}">Books</a></li>
                         <li><a href="{{ url('about') }}">About</a></li>
                         <li><a href="{{ url('faq') }}">FAQ</a></li>
                         @if (Auth::guest())
@@ -146,12 +146,17 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
                             </a>
                             <!-- NOTE - class .main-nav used for toggling the stacked navbar look on small device views. Used in script above -->
                             <ul class="dropdown-menu" id="main-nav" role="menu">
-                                <li><a href="{{ url('/profile') }}" class="dropdown-item">Profile</a></li>
+                                <li>
+                                    <a href="{{ url('/profile') }}" class="dropdown-item bging-talkbox-gray">
+                                        <!-- ICON: from google. a locked lock icon -->
+                                        <i class="material-icons md-light">account_box</i>&nbsp;Profile
+                                    </a>
+                                </li>
+
                                 <li>
                                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                         <!-- ICON: from google. a locked lock icon -->
-                                        <i class="material-icons md-light">lock_outline</i>
-                                        " Logout"
+                                        <i class="material-icons md-light">lock_outline</i>&nbsp;Logout
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}

@@ -50,7 +50,7 @@ $(function()
 });
 
 function clearFunction() {
-    document.getElementById("myImg").src = "uploads/blankBook.jpg";
+    document.getElementById("myImg").src = "img/GreenBook.png";
 }
 </script>
 

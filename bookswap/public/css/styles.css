@@ -57,6 +57,29 @@ nav .icon-bar {
     padding-left: 50px;
     padding-right: 0px;
 }
+/*
+Used for 'open' feature for links and dropdowns on browsers.
+Area remains 'highlighted' with this css.
+Overide, but make text 'highlight' to keep the consistent idea.
+*/
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #222;
+    color: #AAFF00;
+}
+.dropdown-menu {
+    padding: 20px 15px 15px 15px;
+    min-width: 120px;
+}
+.dropdown-menu>li>a {
+    color: #fff;
+}
+.dropdown-menu>li>a:hover {
+    color: #AAFF00;
+    background-color: #666;
+    -webkit-transition: background 0.2s, padding 0.2s;
+    -moz-transition: background 0.2s, padding 0.2s;
+    transition: background 0.2s, padding 0.2s;
+}
 .logo-name {
     color: #77BB00;
 }
@@ -184,12 +207,26 @@ input[type=text], input[type="email"], input[type="password"], input[type="numbe
 input[type="email"] {
     text-transform: lowercase;
 }
+input[type="password"] {
+    text-transform: none;
+}
 textarea:focus,
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus,
 .uneditable-input:focus {
     box-shadow: none;
     border-bottom: 3px solid #ccc;
     transition: all 300ms ease-in-out;
+}
+/*
+Used for auto fill on browsers.
+Selected entry remains 'highlighted' with this css.
+Overide, but make text 'highlight' to keep the consistent idea.
+Doesn't seem to work, maybe since i'm logged into Chrome...
+*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #222!important;
+    background-image: none!important;
+    color: #77BB00!important;
 }
 input[type=submit] {
     width: 100%;

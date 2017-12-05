@@ -12,7 +12,7 @@ NOTE: this consists of the repetitive html & import information -->
                 <div class="panel-heading"><h1>Profile</h1></div>
                 @if (count($exchange) > 0)
                     <div class="panel-body">
-                        <table class="table table-striped table-dark table-hover task-table">
+                        <table class="table table-dark table-hover table-responsive task-table">
                             <thead>
                                 <th>Cover</th>
                                 <th>Title</th>

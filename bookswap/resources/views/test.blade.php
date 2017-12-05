@@ -13,7 +13,7 @@
                     <!-- Current Tasks -->
                     @if (count($exchange) > 0)
                     <div class="panel-body">
-                        <table class="table table-striped table-dark table-hover task-table">
+                        <table class="table table-dark table-hover table-responsive task-table">
                             <thead>
                                 <th>Cover</th>
                                 <th>Title</th>

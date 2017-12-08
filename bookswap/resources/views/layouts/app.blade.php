@@ -21,8 +21,9 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
     <!-- IMPORT: Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- PAGE: Title -->
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- PAGE: Title
+        configured on each page
+        should use laravel functionality -->
 
     <!-- CODE: scripts, etc -->
     <script>

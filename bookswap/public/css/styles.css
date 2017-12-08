@@ -412,8 +412,6 @@ section a:hover {
     -moz-transition: background 0.2s, padding 0.2s;
     transition: background 0.2s, padding 0.2s;
 }
-
-
 .categories a::before, .categories a::after {
     position: absolute;
     top: 50%;

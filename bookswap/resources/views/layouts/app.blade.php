@@ -52,55 +52,6 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
             checkWidth(false);
         });
     });
-
-    // CODE: JS: for search functionality (used only by welcome page) -->
-    var books;
-
-    function submitQuery(request, callback)
-    {
-        //console.log("submitQuery called");
-        $.ajax({
-            method: "GET",
-            url: "/listexchangeJSON",   //getting JSON
-            data: { title: request.term }
-            //get title of book from written keyword
-        })
-        .done(function handleResponse(response) {
-            console.log("handleResponse called: " + response);
-            //create new array books
-            books = response;
-            var titles = new Array;
-
-            for (var i = 0; i < response.length; i++) {
-                titles.push(response[i].title);  //push title info into books
-                // in production code, item.text should have the HTML entities escaped.
-                //document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
-            }
-
-            callback(titles);
-            //console.log(titles);
-        });
-        //after 2 characters written potential titles of books are displayed in textbox
-    }
-
-    $(function() {
-        $('#search').autocomplete({
-            source: submitQuery,
-            minLength: 2,
-            select: function( event, ui ) {
-                //books.items[ui.item.id].volumeInfo.title
-                //console.log( "Selected: " +  ui.item.value);
-                window.location.href = '/test?title=' + ui.item.value;
-            },
-        });
-        // enter keypress
-        $('#search').keypress(function (e) {
-            if (e.which == 13) {
-                //console.log("enter keypress" +  $('#search')[0].value );
-                window.location.href = '/test?title=' + $('#search')[0].value;
-            }
-        });
-    });
     </script>
     <!--<script src="/js/app.js"></script>-->
 </head>
@@ -145,7 +96,7 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <!-- NOTE - class .main-nav used for toggling the stacked navbar look on small device views. Used in script above -->
-                            <ul class="dropdown-menu" id="main-nav" role="menu">
+                            <ul class="dropdown-menu bgimg-talkbox bgimg-talkbox-gray" id="main-nav" role="menu">
                                 <li>
                                     <a href="{{ url('/profile') }}" class="dropdown-item bging-talkbox-gray">
                                         <!-- ICON: from google. a locked lock icon -->

@@ -1,12 +1,12 @@
 @extends('layouts.app')
 <!-- FILE LOCATION: resources\views\layouts\app.blade.php
 NOTE: this consists of the repetitive html & import information -->
-<title>BookSwap | Profile</title>
+<title>BookSwap | About</title>
 
 @section('content')
 <div class="container">
     <div class="panel">
-        <div class="panel-heading"><h1>About</h1></div>
+        <div class="panel-heading col-sm-12"><h1>About</h1></div>
         <div class="panel-body">
             <!-- About Section -->
             <div class="col-sm-12" id="about">

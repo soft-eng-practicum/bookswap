@@ -22,7 +22,7 @@ if (strlen($q)>0) {
           "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
-          $hint=$hint . "<br /><a href='" .
+          $hint=$hint . "<br><a href='" .
           $z->item(0)->childNodes->item(0)->nodeValue .
           "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";

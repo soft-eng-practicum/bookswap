@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <!-- FILE LOCATION: resources\views\layouts\app.blade.php
 NOTE: this consists of the repetitive html & import information -->
-<title>BookSwap | Profile</title>
+<title>BookSwap | FAQ</title>
 <script src="/js/app.js"></script>
 
 @section('content')

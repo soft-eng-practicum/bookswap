@@ -1,6 +1,6 @@
 
 @extends('layouts.app')
-<title>BookSwap | Available Books</title>
+<title>BookSwap | Books</title>
 
 @section('content')
     <div class="container">

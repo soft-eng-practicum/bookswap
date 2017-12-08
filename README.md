@@ -9,7 +9,10 @@
 6. Testing: Sierra Williams(lead), Chelsea D'Alessandro, Alek Gartland, Waylon Lao
 
 ## Bookswap URL:
-* bookswap-dev.us-east-1.elasticbeanstalk.com
+* [Bookswap](bookswap-dev.us-east-1.elasticbeanstalk.com)
+
+## BookSwap Demo Video (screencast):
+* [Bookswap Demo Video](https://youtu.be/OSNYOYd8ozk)
 
 ## Repository URL:
 * [github repository](https://github.com/soft-eng-practicum/bookswap)

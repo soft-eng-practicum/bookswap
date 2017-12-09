@@ -21,9 +21,12 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
     <!-- IMPORT: Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- PAGE: Title
-        configured on each page
-        should use laravel functionality -->
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
 
     <!-- CODE: scripts, etc -->
     <script>
@@ -55,6 +58,10 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
     });
     </script>
     <!--<script src="/js/app.js"></script>-->
+
+    <!-- PAGE: Title
+        configured on each page
+        should use laravel functionality -->
 </head>
 <body>
     <div id="app">
@@ -135,12 +142,5 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
         </footer>
     </div>
 
-
-    <!-- Scripts -->
-    <script src="/js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-    crossorigin="anonymous"></script>
 </body>
 </html>

@@ -22,7 +22,6 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
@@ -141,6 +140,7 @@ NOTE - Usd in FAQ page... moved here for uniformity purposes
             </div>
         </footer>
     </div>
+    <script src="/js/app.js"></script>
 
 </body>
 </html>

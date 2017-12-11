@@ -2,6 +2,7 @@
 <!-- FILE LOCATION: resources\views\layouts\app.blade.php
 NOTE: this consists of the repetitive html & import information -->
 <title>BookSwap | Home</title>
+@section('content')
 <script>
 /*
 CODE: JS: for 'search book' functionality (used only by welcome page)
@@ -56,7 +57,6 @@ $(function() {
     });
 });
 </script>
-@section('content')
 <div class="container">
     <img class="logo-img" src="{{URL::asset('img/logo.png')}}" alt="BookSwap logo. A green book."/>
 
